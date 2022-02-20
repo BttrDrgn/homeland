@@ -75,9 +75,8 @@ endif
 # Files
 #-------------------------------------------------------------------------------
 
-BIN_DIR  := build/
 BASEROM  := baserom.dol
-DOL      := $(BIN_DIR)main.dol
+DOL      := main.dol
 ELF      := $(DOL:.dol=.elf)
 MAP      := $(DOL:.dol=.map)
 
@@ -104,14 +103,14 @@ ALL_O_FILES := $(O_FILES)
 $(ELF): $(O_FILES)
 
 # start.rel sources
-# SOURCES := \
-#	 asm/start.s \
-# 
-# O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
-# ALL_O_FILES += $(O_FILES)
-# start.plf: $(O_FILES)
-# start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x28 -c 14
-# ALL_RELS += start.rel
+SOURCES := \
+	 asm/start/start.s \
+
+O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+ALL_O_FILES += $(O_FILES)
+start.plf: $(O_FILES)
+start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x28 -c 14
+ALL_RELS += start.rel
 
 
 #-------------------------------------------------------------------------------
@@ -121,7 +120,7 @@ $(ELF): $(O_FILES)
 .PHONY: all default
 
 all: $(DOL) $(ALL_RELS)
-	$(QUIET) mkdir -p $(BIN_DIR)
+	$(QUIET)
 
 # static module (.dol file)
 %.dol: %.elf $(ELF2DOL)
