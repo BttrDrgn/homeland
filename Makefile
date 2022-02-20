@@ -87,7 +87,16 @@ REL_LCF := partial.lcf
 
 # main dol sources
 SOURCES := \
-    asm/main.s \
+    asm/init.s \
+    asm/text.s \
+    asm/extab.s \
+    asm/ctors.s \
+    asm/dtors.s \
+    asm/rodata.s \
+    asm/data.s \
+    asm/sdata.s \
+    asm/sdata2.s \
+    asm/bss.s \
 
 O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
 ALL_O_FILES := $(O_FILES)
