@@ -289,7 +289,10 @@ lbl_8016D3F4:
 	.incbin "baserom.dol", 0x16A3F4, 0x24
 .global lbl_8016D418
 lbl_8016D418:
-	.incbin "baserom.dol", 0x16A418, 0x1B58
+	.incbin "baserom.dol", 0x16A418, 0x1B10
+.global lbl_8016EF28
+lbl_8016EF28:
+	.incbin "baserom.dol", 0x16BF28, 0x48
 .global lbl_8016EF70
 lbl_8016EF70:
 	.incbin "baserom.dol", 0x16BF70, 0x20

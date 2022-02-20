@@ -24,3 +24,4 @@ __pycache__
 errors.txt
 output.asm
 .vscode/
+*.idb

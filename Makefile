@@ -9,7 +9,7 @@ else
 endif
 
 # Unknown what actual compiler version it uses
-COMPILER_VERSION ?= 2.6
+COMPILER_VERSION ?= 1.0
 
 VERBOSE ?= 0
 
@@ -95,6 +95,7 @@ SOURCES := \
     asm/rodata.s \
     asm/data.s \
     asm/sdata.s \
+    asm/sbss.s \
     asm/sdata2.s \
     asm/bss.s \
 
