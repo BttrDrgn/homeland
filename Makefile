@@ -77,7 +77,7 @@ endif
 
 BIN_DIR  := build/
 BASEROM  := baserom.dol
-DOL      := $(BIN_DIR)homeland.dol
+DOL      := $(BIN_DIR)main.dol
 ELF      := $(DOL:.dol=.elf)
 MAP      := $(DOL:.dol=.map)
 
