@@ -110,7 +110,7 @@ SOURCES := \
 O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
 ALL_O_FILES += $(O_FILES)
 start.plf: $(O_FILES)
-start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x28 -c 14
+start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3A -c 16
 ALL_RELS += start.rel
 
 

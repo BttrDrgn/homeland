@@ -781,8 +781,8 @@ static void write_rel_file(struct Module *module, struct RelHeader *relHdr, cons
     relHdr->importTableSize = importsCount * 8;
     
     // 3.5. Write fixed values. VERSION 2/3 only!
-    relHdr->align = 0x20; // TODO: Read me from a section.
-    relHdr->bssAlign = 0x40; // TODO: Read me from bss section.
+    relHdr->align = 0x08; // TODO: Read me from a section.
+    relHdr->bssAlign = 0x20; // TODO: Read me from bss section.
     relHdr->fixSize = relHdr->relocationTableOffset; // Only 1 REL is used, so we can just do this as a hack.
 
     // 4. Write REL header.
