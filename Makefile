@@ -75,8 +75,9 @@ endif
 # Files
 #-------------------------------------------------------------------------------
 
+BIN_DIR  := build/
 BASEROM  := baserom.dol
-DOL      := homeland.dol
+DOL      := $(BIN_DIR)homeland.dol
 ELF      := $(DOL:.dol=.elf)
 MAP      := $(DOL:.dol=.map)
 
@@ -120,7 +121,7 @@ $(ELF): $(O_FILES)
 .PHONY: all default
 
 all: $(DOL) $(ALL_RELS)
-	$(QUIET)
+	$(QUIET) mkdir -p $(BIN_DIR)
 
 # static module (.dol file)
 %.dol: %.elf $(ELF2DOL)
