@@ -26,7 +26,7 @@
 # offset: 0x00000000	length: 0x00000000	flags: 0
 # offset: 0x00000000	length: 0x00000000	flags: 0
 # 1
-.section .text
+.section .text, "ax"
 .global _prolog
 _prolog:
 /* 000000CC 9421FFF0 */ stwu r1, -0x10(r1)
@@ -18841,7 +18841,7 @@ lbl_00010CF4:
 /* 00010D1C 4E800020 */ blr 
 
 # 2
-.section .ctors
+.section .ctors, "wa"
 lbl_00010D20:
     # 0x10D20
     .4byte lbl_0000016C
@@ -18870,14 +18870,14 @@ lbl_00010D20:
     .4byte 0x00000000
 
 # 3
-.section .dtors
+.section .dtors, "wa"
 lbl_00010D80:
     # 0x10D80
     .4byte lbl_00000250
     .4byte 0x00000000
 
 # 4
-.section .rodata
+.section .rodata, "wa"
 lbl_00010D88:
     # 0x10D88
     .4byte 0x00000000
@@ -22956,7 +22956,7 @@ lbl_00014B78:
     .4byte 0x00000001
 
 # 5
-.section .data
+.section .data, "wa"
 lbl_00014B90:
     # 0x14B90
     .asciz "PackDiscLoader"
@@ -25298,7 +25298,7 @@ lbl_00016F4C:
     .4byte lbl_00010CA0
 
 # 6
-.section .bss
+.section .bss, "wa"
 lbl_10000000:
     .skip 0x58
 lbl_10000058:
