@@ -9,7 +9,7 @@ else
 endif
 
 # Unknown what actual compiler version it uses
-COMPILER_VERSION ?= 1.0
+COMPILER_VERSION ?= 2.6
 
 VERBOSE ?= 0
 
