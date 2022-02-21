@@ -112,6 +112,8 @@ ALL_O_FILES += $(O_FILES)
 start.plf: $(O_FILES)
 start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3A -c 16
 ALL_RELS += start.rel
+ALL_REL_MAPS += start.map
+ALL_REL_ELFS += start.plf
 
 # client.rel sources
 SOURCES := \
@@ -122,6 +124,8 @@ ALL_O_FILES += $(O_FILES)
 client.plf: $(O_FILES)
 client.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3C -c 18
 ALL_RELS += client.rel
+ALL_REL_MAPS += client.map
+ALL_REL_ELFS += client.plf
 
 # alone.rel sources
 SOURCES := \
@@ -132,7 +136,8 @@ ALL_O_FILES += $(O_FILES)
 alone.plf: $(O_FILES)
 alone.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3C -c 18
 ALL_RELS += alone.rel
-
+ALL_REL_MAPS += alone.map
+ALL_REL_ELFS += alone.plf
 
 #-------------------------------------------------------------------------------
 # Recipes
@@ -186,7 +191,7 @@ endef
 	$(QUIET) $(AS) $(ASFLAGS) -o $@ $<
 
 clean:
-	$(RM) $(DOL) $(ELF) $(MAP) $(ALL_RELS) $(ELF2DOL) $(ELF2REL)
+	$(RM) $(DOL) $(ELF) $(MAP) $(ALL_RELS) $(ALL_REL_MAPS) $(ALL_REL_ELFS) $(ELF2DOL) $(ELF2REL)
 	find . -name '*.o' -exec rm {} +
 	find . -name '*.dep' -exec rm {} +
 	find . -name '*.dump' -exec rm {} +
