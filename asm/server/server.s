@@ -163,8 +163,6 @@ error: symbol for 0x804D95CC not found
 error: symbol for 0x804D95CC not found
 error: symbol for 0x804D95CC not found
 error: symbol for 0x804D95CC not found
-error: symbol for 0x800F4DA0 not found
-error: symbol for 0x800F4DA0 not found
 error: symbol for 0x800F4C38 not found
 error: symbol for 0x800F4C38 not found
 error: symbol for 0x800F4C4C not found

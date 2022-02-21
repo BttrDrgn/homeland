@@ -117,8 +117,6 @@ error: symbol for 0x804D91A8 not found
 error: symbol for 0x804D91A8 not found
 error: symbol for 0x804D91A8 not found
 error: symbol for 0x804D91A8 not found
-error: symbol for 0x8016EDA4 not found
-error: symbol for 0x8016EDA4 not found
 error: symbol for 0x8016EDFC not found
 error: symbol for 0x8016EDFC not found
 error: symbol for 0x8016EE54 not found
