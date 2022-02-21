@@ -80,10 +80,10 @@ DOL      := main.dol
 ELF      := $(DOL:.dol=.elf)
 MAP      := $(DOL:.dol=.map)
 
-DOL_LCF := static.lcf
+DOL_LCF := lcf/static.lcf
 
 # TODO: REL support
-REL_LCF := partial.lcf
+REL_LCF := lcf/partial.lcf
 
 # main dol sources
 SOURCES := \
@@ -112,6 +112,16 @@ ALL_O_FILES += $(O_FILES)
 start.plf: $(O_FILES)
 start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3A -c 16
 ALL_RELS += start.rel
+
+# client.rel sources
+SOURCES := \
+	 asm/client/client.s \
+
+O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+ALL_O_FILES += $(O_FILES)
+client.plf: $(O_FILES)
+client.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3C -c 18
+ALL_RELS += client.rel
 
 
 #-------------------------------------------------------------------------------
