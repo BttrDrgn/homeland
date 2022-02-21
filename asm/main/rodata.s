@@ -1,4 +1,6 @@
-.section .rodata, "wa"  # 0x800E2780 - 0x800F6880
+.include "macros.inc"
+
+.section .rodata # 0x800E2780 - 0x800F6880
 .global lbl_800E2780
 lbl_800E2780:
 	.incbin "baserom.dol", 0xDF780, 0x40
