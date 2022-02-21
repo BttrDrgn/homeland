@@ -7,20 +7,38 @@ SECTIONS
 {
     GROUP :
     {
-		.init 			BIND(0x80003100) : {}
-		.text 			BIND(0x800056A0) : {}
-		extab_ 			BIND(0x80005600) : {}
-		extabindex_ 	BIND(0x80005640) : {}
-		.ctors 			BIND(0x800E2460) : {}
-		.dtors 			BIND(0x800E2760) : {}
-		.rodata 		BIND(0x800E2780) : {}
-		.data 			BIND(0x800F6880) : {}
-		.bss 			BIND(0x8017C600) : {}
-		.sdata 			BIND(0x804D5320) : {}
-		.sbss 			BIND(0x804D6D00) : {}
-		.sdata2 		BIND(0x804D9020) : {}
-		.sbss2 			BIND(0x804DA760) : {}
-		.stack      	ALIGN(0x100) : {}
+		/*
+		.init 		ALIGN(0x20):{}
+		extab_ 		ALIGN(0x20):{}
+		extabindex_ ALIGN(0x20):{}
+		.text 		ALIGN(0x20):{}
+		.ctors 		ALIGN(0x20):{}
+		.dtors 		ALIGN(0x20):{}
+		.rodata		ALIGN(0x20):{}
+		.data 		ALIGN(0x20):{}
+		.bss		ALIGN(0x20):{}
+		.sdata 		ALIGN(0x20):{}
+		.sbss 		ALIGN(0x20):{}
+		.sdata2 	ALIGN(0x20):{}
+		.sbss2 		ALIGN(0x20):{}
+		.stack 		ALIGN(0x100):{}
+		*/
+
+		.init 		BIND(0x80003100) : {}
+		.text 		BIND(0x800056A0) : {}
+		extab_ 		BIND(0x80005600) : {}
+		extabindex_ BIND(0x80005640) : {}
+		.ctors 		BIND(0x800E2460) : {}
+		.dtors 		BIND(0x800E2760) : {}
+		.rodata 	BIND(0x800E2780) : {}
+		.data 		BIND(0x800F6880) : {}
+		.bss 		BIND(0x8017C600) : {}
+		.sdata 		BIND(0x804D5320) : {}
+		.sbss 		BIND(0x804D6D00) : {}
+		.sdata2 	BIND(0x804D9020) : {}
+		.sbss2 		BIND(0x804DA760) : {}
+		.stack      ALIGN(0x100) : {}
+		
     } > text
 
     /* stack immediately follows last section */
