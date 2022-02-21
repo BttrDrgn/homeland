@@ -17,6 +17,66 @@ BSS section:
 	.bss:		0x00000000	0x8017C600	0x804D5320
 Entry Point: 0x80003154
 */
+
+
+/* Client */
+# id: 3
+# version: 3
+# nameoffset: 0x74, size: 0x3C
+# section table: 0x4C, size: 0x90
+# imp table: 0x11D710
+# relocs offset: 0x11D720
+# _prolog:     1:0x0
+# _epilog:     1:0x50
+# _unresolved: 1:0x9C
+# num sections: 18
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x000000DC	length: 0x000AC32C	flags: 1
+# offset: 0x000AC408	length: 0x000005A4	flags: 0
+# offset: 0x000AC9AC	length: 0x00000008	flags: 0
+# offset: 0x000AC9B8	length: 0x0004FFF0	flags: 0
+# offset: 0x000FC9A8	length: 0x00020D68	flags: 0
+# offset: 0x10000000	length: 0x0005F924	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+
+/* Alone */
+# id: 2
+# version: 3
+# nameoffset: 0x3A, size: 0x3A
+# section table: 0x4C, size: 0x80
+# imp table: 0x1DDEEC
+# relocs offset: 0x1DDEFC
+# _prolog:     1:0x0
+# _epilog:     1:0x50
+# _unresolved: 1:0x9C
+# num sections: 16
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x000000CC	length: 0x0014BCF0	flags: 1
+# offset: 0x0014BDBC	length: 0x00000A9C	flags: 0
+# offset: 0x0014C858	length: 0x00000008	flags: 0
+# offset: 0x0014C860	length: 0x00061ECC	flags: 0
+# offset: 0x001AE730	length: 0x0002F7BC	flags: 0
+# offset: 0x10000000	length: 0x000AC38C	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+
 .set r0, 0
 .set r1, 1
 .set r2, 2

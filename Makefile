@@ -123,6 +123,16 @@ client.plf: $(O_FILES)
 client.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3C -c 18
 ALL_RELS += client.rel
 
+# alone.rel sources
+SOURCES := \
+	 asm/alone/alone.s \
+
+O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+ALL_O_FILES += $(O_FILES)
+alone.plf: $(O_FILES)
+alone.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3C -c 18
+ALL_RELS += alone.rel
+
 
 #-------------------------------------------------------------------------------
 # Recipes
