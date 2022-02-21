@@ -95,18 +95,6 @@ error: symbol for 0x804D96D0 not found
 error: symbol for 0x804D96D0 not found
 error: symbol for 0x804D96CC not found
 error: symbol for 0x804D96CC not found
-error: symbol for 0x804D91A8 not found
-error: symbol for 0x804D91A8 not found
-error: symbol for 0x804D91A8 not found
-error: symbol for 0x804D91A8 not found
-error: symbol for 0x804D91A8 not found
-error: symbol for 0x804D91A8 not found
-error: symbol for 0x804D9584 not found
-error: symbol for 0x804D9585 not found
-error: symbol for 0x804D9584 not found
-error: symbol for 0x804D9585 not found
-error: symbol for 0x804D9570 not found
-error: symbol for 0x804D9570 not found
 error: symbol for 0x804D9658 not found
 error: symbol for 0x804D9658 not found
 error: symbol for 0x804D96F0 not found
@@ -123,7 +111,5 @@ error: symbol for 0x804D96FC not found
 error: symbol for 0x804D96FC not found
 error: symbol for 0x804D96FC not found
 error: symbol for 0x804D96FC not found
-error: symbol for 0x804D9534 not found
-error: symbol for 0x804D9534 not found
 error: symbol for 0x804D9708 not found
 error: symbol for 0x804D9708 not found
