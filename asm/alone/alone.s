@@ -27,10 +27,6 @@
 # offset: 0x00000000	length: 0x00000000	flags: 0
 error: symbol for 0x804D9704 not found
 error: symbol for 0x804D9704 not found
-error: symbol for 0x804D9654 not found
-error: symbol for 0x804D9654 not found
-error: symbol for 0x804D9650 not found
-error: symbol for 0x804D9650 not found
 error: symbol for 0x804D9700 not found
 error: symbol for 0x804D9700 not found
 error: symbol for 0x800F4688 not found
@@ -71,8 +67,6 @@ error: symbol for 0x804D96D0 not found
 error: symbol for 0x804D96D0 not found
 error: symbol for 0x804D96CC not found
 error: symbol for 0x804D96CC not found
-error: symbol for 0x804D9658 not found
-error: symbol for 0x804D9658 not found
 error: symbol for 0x804D96F0 not found
 error: symbol for 0x804D96F0 not found
 error: symbol for 0x804D96F0 not found
