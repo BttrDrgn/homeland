@@ -190,13 +190,22 @@ lbl_800F4758:
 	.incbin "baserom.dol", 0xF1758, 0x10
 .global lbl_800F4768
 lbl_800F4768:
-	.incbin "baserom.dol", 0xF1768, 0x20
+	.incbin "baserom.dol", 0xF1768, 0x10
+.global lbl_800F4778
+lbl_800F4778:
+	.incbin "baserom.dol", 0xF1778, 0x10
 .global lbl_800F4788
 lbl_800F4788:
 	.incbin "baserom.dol", 0xF1788, 0x10
 .global lbl_800F4798
 lbl_800F4798:
-	.incbin "baserom.dol", 0xF1798, 0x30
+	.incbin "baserom.dol", 0xF1798, 0x10
+.global lbl_800F47A8
+lbl_800F47A8:
+	.incbin "baserom.dol", 0xF17A8, 0x10
+.global lbl_800F47B8
+lbl_800F47B8:
+	.incbin "baserom.dol", 0xF17B8, 0x10
 .global lbl_800F47C8
 lbl_800F47C8:
 	.incbin "baserom.dol", 0xF17C8, 0x20
@@ -208,7 +217,10 @@ lbl_800F47F8:
 	.incbin "baserom.dol", 0xF17F8, 0x10
 .global lbl_800F4808
 lbl_800F4808:
-	.incbin "baserom.dol", 0xF1808, 0x40
+	.incbin "baserom.dol", 0xF1808, 0x10
+.global lbl_800F4818
+lbl_800F4818:
+	.incbin "baserom.dol", 0xF1818, 0x30
 .global lbl_800F4848
 lbl_800F4848:
 	.incbin "baserom.dol", 0xF1848, 0xA0
@@ -229,10 +241,37 @@ lbl_800F4928:
 	.incbin "baserom.dol", 0xF1928, 0x10
 .global lbl_800F4938
 lbl_800F4938:
-	.incbin "baserom.dol", 0xF1938, 0x20
+	.incbin "baserom.dol", 0xF1938, 0x10
+.global lbl_800F4948
+lbl_800F4948:
+	.incbin "baserom.dol", 0xF1948, 0x10
 .global lbl_800F4958
 lbl_800F4958:
-	.incbin "baserom.dol", 0xF1958, 0x90
+	.incbin "baserom.dol", 0xF1958, 0x10
+.global lbl_800F4968
+lbl_800F4968:
+	.incbin "baserom.dol", 0xF1968, 0x10
+.global lbl_800F4978
+lbl_800F4978:
+	.incbin "baserom.dol", 0xF1978, 0x10
+.global lbl_800F4988
+lbl_800F4988:
+	.incbin "baserom.dol", 0xF1988, 0x10
+.global lbl_800F4998
+lbl_800F4998:
+	.incbin "baserom.dol", 0xF1998, 0x10
+.global lbl_800F49A8
+lbl_800F49A8:
+	.incbin "baserom.dol", 0xF19A8, 0x10
+.global lbl_800F49B8
+lbl_800F49B8:
+	.incbin "baserom.dol", 0xF19B8, 0x10
+.global lbl_800F49C8
+lbl_800F49C8:
+	.incbin "baserom.dol", 0xF19C8, 0x10
+.global lbl_800F49D8
+lbl_800F49D8:
+	.incbin "baserom.dol", 0xF19D8, 0x10
 .global lbl_800F49E8
 lbl_800F49E8:
 	.incbin "baserom.dol", 0xF19E8, 0x10
