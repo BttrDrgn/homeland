@@ -613,7 +613,10 @@ lbl_804D9528:
 	.incbin "baserom.dol", 0x17B4E8, 0x4
 .global lbl_804D952C
 lbl_804D952C:
-	.incbin "baserom.dol", 0x17B4EC, 0x78
+	.incbin "baserom.dol", 0x17B4EC, 0x6
+.global lbl_804D9532
+lbl_804D9532:
+	.incbin "baserom.dol", 0x17B4F2, 0x72
 .global lbl_804D95A4
 lbl_804D95A4:
 	.incbin "baserom.dol", 0x17B564, 0x4
@@ -703,7 +706,18 @@ lbl_804D963C:
 	.incbin "baserom.dol", 0x17B5FC, 0x4
 .global lbl_804D9640
 lbl_804D9640:
-	.incbin "baserom.dol", 0x17B600, 0xCC
+	.incbin "baserom.dol", 0x17B600, 0xC
+.global lbl_804D964C
+lbl_804D964C:
+	.incbin "baserom.dol", 0x17B60C, 0x18
+
+.global lbl_804D9664
+lbl_804D9664:
+	.incbin "baserom.dol", 0x17B624, 0x8
+.global lbl_804D966C
+lbl_804D966C:
+	.incbin "baserom.dol", 0x17B62C, 0xA0
+
 .global lbl_804D970C
 lbl_804D970C:
 	.incbin "baserom.dol", 0x17B6CC, 0x4
