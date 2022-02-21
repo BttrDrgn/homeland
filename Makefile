@@ -10,8 +10,9 @@ endif
 
 # Unknown what actual compiler version it uses
 COMPILER_VERSION ?= 2.6
+LINKER_VERSION ?= 1.0
 
-VERBOSE ?= 0
+VERBOSE ?= 1
 
 # Don't echo build commands unless VERBOSE is set
 ifeq ($(VERBOSE),0)
@@ -26,9 +27,10 @@ default: all
 #-------------------------------------------------------------------------------
 
 COMPILER_DIR := tools/mwcc_compiler/$(COMPILER_VERSION)
+LINKER_DIR := tools/mwcc_compiler/$(LINKER_VERSION)
 AS      := $(DEVKITPPC)/bin/powerpc-eabi-as
 CC      := $(WINE) $(COMPILER_DIR)/mwcceppc.exe
-LD      := $(WINE) $(COMPILER_DIR)/mwldeppc.exe
+LD      := $(WINE) $(LINKER_DIR)/mwldeppc.exe
 OBJCOPY := $(DEVKITPPC)/bin/powerpc-eabi-objcopy
 OBJDUMP := $(DEVKITPPC)/bin/powerpc-eabi-objdump
 GCC     := $(DEVKITPPC)/bin/powerpc-eabi-gcc
@@ -75,10 +77,10 @@ endif
 # Files
 #-------------------------------------------------------------------------------
 
-BASEROM  := baserom.dol
-DOL      := build/main.dol
-ELF      := $(DOL:.dol=.elf)
-MAP      := $(DOL:.dol=.map)
+BUILD_DIR := build/HomeLand
+DOL     := $(BUILD_DIR)/main.dol
+ELF     := $(DOL:.dol=.elf)
+MAP     := $(BUILD_DIR)/HomeLand.map
 
 DOL_LCF := lcf/static.lcf
 
@@ -155,7 +157,7 @@ all: $(DOL) $(ALL_RELS)
 
 %.elf: $(DOL_LCF)
 	@echo Linking static module $@
-	$(QUIET) $(LD) -lcf $(DOL_LCF) $(DOL_LDFLAGS) $(filter %.o,$^) -map $(@:.elf=.map) -o $@
+	$(QUIET) $(LD) -lcf $(DOL_LCF) $(DOL_LDFLAGS) $(filter %.o,$^) -o $@
 
 # relocatable module (.rel file)
 %.rel: %.plf $(ELF) $(ELF2REL)
@@ -204,12 +206,12 @@ DEP_FILES := $(addsuffix .dep,$(basename $(ALL_O_FILES)))
 # Tool Recipes
 #-------------------------------------------------------------------------------
 
-$(ELF2DOL): tools/elf2dol.c
-	@echo Building tool $@
-	$(QUIET) $(HOSTCC) $(HOSTCFLAGS) -o $@ $^
+#$(ELF2DOL): tools/elf2dol.c
+	#@echo Building tool $@
+	#$(QUIET) $(HOSTCC) $(HOSTCFLAGS) -o $@ $^
 
-$(ELF2REL): tools/elf2rel.c
-	@echo Building tool $@
-	$(QUIET) $(HOSTCC) $(HOSTCFLAGS) -o $@ $^
+#$(ELF2REL): tools/elf2rel.c
+	#@echo Building tool $@
+	#$(QUIET) $(HOSTCC) $(HOSTCFLAGS) -o $@ $^
 
 print-% : ; $(info $* is a $(flavor $*) variable set to [$($*)]) @true
