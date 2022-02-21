@@ -109,7 +109,10 @@ lbl_804D5C8C:
 	.incbin "baserom.dol", 0x179F6C, 0x4
 .global lbl_804D5C90
 lbl_804D5C90:
-	.incbin "baserom.dol", 0x179F70, 0x14
+	.incbin "baserom.dol", 0x179F70, 0x8
+.global lbl_804D5C98
+lbl_804D5C98:
+	.incbin "baserom.dol", 0x179F78, 0xC	
 .global lbl_804D5CA4
 lbl_804D5CA4:
 	.incbin "baserom.dol", 0x179F84, 0xC

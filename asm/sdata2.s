@@ -622,7 +622,10 @@ lbl_804D95A8:
 	.incbin "baserom.dol", 0x17B568, 0x8
 .global lbl_804D95B0
 lbl_804D95B0:
-	.incbin "baserom.dol", 0x17B570, 0x2C
+	.incbin "baserom.dol", 0x17B570, 0x8
+.global lbl_804D95B8
+lbl_804D95B8:
+	.incbin "baserom.dol", 0x17B578, 0x24
 .global lbl_804D95DC
 lbl_804D95DC:
 	.incbin "baserom.dol", 0x17B59C, 0x4
