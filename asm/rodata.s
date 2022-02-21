@@ -391,7 +391,28 @@ lbl_800F4BC8:
 	.incbin "baserom.dol", 0xF1BC8, 0x10
 .global lbl_800F4BD8
 lbl_800F4BD8:
-	.incbin "baserom.dol", 0xF1BD8, 0x1E8
+	.incbin "baserom.dol", 0xF1BD8, 0x10
+.global lbl_800F4BE8
+lbl_800F4BE8:
+	.incbin "baserom.dol", 0xF1BE8, 0x10
+.global lbl_800F4BF8
+lbl_800F4BF8:
+	.incbin "baserom.dol", 0xF1BF8, 0x10
+.global lbl_800F4C08
+lbl_800F4C08:
+	.incbin "baserom.dol", 0xF1C08, 0x10
+.global lbl_800F4C18
+lbl_800F4C18:
+	.incbin "baserom.dol", 0xF1C18, 0x10
+.global lbl_800F4C28
+lbl_800F4C28:
+	.incbin "baserom.dol", 0xF1C28, 0x10
+.global lbl_800F4C38
+lbl_800F4C38:
+	.incbin "baserom.dol", 0xF1C38, 0x14
+.global lbl_000F4C4C
+lbl_800F4C4C:
+	.incbin "baserom.dol", 0xF1C4C, 0x174
 .global lbl_800F4DC0
 lbl_800F4DC0:
 	.incbin "baserom.dol", 0xF1DC0, 0x10

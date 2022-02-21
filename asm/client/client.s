@@ -145,8 +145,6 @@ error: symbol for 0x804D9590 not found
 error: symbol for 0x804D9598 not found
 error: symbol for 0x804D9594 not found
 error: symbol for 0x804D9598 not found
-error: symbol for 0x800F4BE8 not found
-error: symbol for 0x800F4BE8 not found
 error: symbol for 0x804D9584 not found
 error: symbol for 0x804D9585 not found
 error: symbol for 0x804D9584 not found
