@@ -18,27 +18,24 @@ BSS section:
 Entry Point: 0x80003154
 */
 
-
-/* Client */
-# id: 3
+/* Start */
+# id: 1
 # version: 3
-# nameoffset: 0x74, size: 0x3C
-# section table: 0x4C, size: 0x90
-# imp table: 0x11D710
-# relocs offset: 0x11D720
+# nameoffset: 0x0, size: 0x3A
+# section table: 0x4C, size: 0x80
+# imp table: 0x16F50
+# relocs offset: 0x16F60
 # _prolog:     1:0x0
 # _epilog:     1:0x50
 # _unresolved: 1:0x9C
-# num sections: 18
+# num sections: 16
 # offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x000000DC	length: 0x000AC32C	flags: 1
-# offset: 0x000AC408	length: 0x000005A4	flags: 0
-# offset: 0x000AC9AC	length: 0x00000008	flags: 0
-# offset: 0x000AC9B8	length: 0x0004FFF0	flags: 0
-# offset: 0x000FC9A8	length: 0x00020D68	flags: 0
-# offset: 0x10000000	length: 0x0005F924	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x000000CC	length: 0x00010C54	flags: 1
+# offset: 0x00010D20	length: 0x00000060	flags: 0
+# offset: 0x00010D80	length: 0x00000008	flags: 0
+# offset: 0x00010D88	length: 0x00003E08	flags: 0
+# offset: 0x00014B90	length: 0x000023C0	flags: 0
+# offset: 0x10000000	length: 0x0000A458	flags: 0
 # offset: 0x00000000	length: 0x00000000	flags: 0
 # offset: 0x00000000	length: 0x00000000	flags: 0
 # offset: 0x00000000	length: 0x00000000	flags: 0
@@ -67,6 +64,36 @@ Entry Point: 0x80003154
 # offset: 0x0014C860	length: 0x00061ECC	flags: 0
 # offset: 0x001AE730	length: 0x0002F7BC	flags: 0
 # offset: 0x10000000	length: 0x000AC38C	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+
+/* Client */
+# id: 3
+# version: 3
+# nameoffset: 0x74, size: 0x3C
+# section table: 0x4C, size: 0x90
+# imp table: 0x11D710
+# relocs offset: 0x11D720
+# _prolog:     1:0x0
+# _epilog:     1:0x50
+# _unresolved: 1:0x9C
+# num sections: 18
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x000000DC	length: 0x000AC32C	flags: 1
+# offset: 0x000AC408	length: 0x000005A4	flags: 0
+# offset: 0x000AC9AC	length: 0x00000008	flags: 0
+# offset: 0x000AC9B8	length: 0x0004FFF0	flags: 0
+# offset: 0x000FC9A8	length: 0x00020D68	flags: 0
+# offset: 0x10000000	length: 0x0005F924	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
 # offset: 0x00000000	length: 0x00000000	flags: 0
 # offset: 0x00000000	length: 0x00000000	flags: 0
 # offset: 0x00000000	length: 0x00000000	flags: 0

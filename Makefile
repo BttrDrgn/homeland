@@ -76,7 +76,7 @@ endif
 #-------------------------------------------------------------------------------
 
 BASEROM  := baserom.dol
-DOL      := main.dol
+DOL      := build/main.dol
 ELF      := $(DOL:.dol=.elf)
 MAP      := $(DOL:.dol=.map)
 
@@ -87,17 +87,17 @@ REL_LCF := lcf/partial.lcf
 
 # main dol sources
 SOURCES := \
-    asm/init.s \
-    asm/text.s \
-    asm/extab.s \
-    asm/ctors.s \
-    asm/dtors.s \
-    asm/rodata.s \
-    asm/data.s \
-    asm/sdata.s \
-    asm/sbss.s \
-    asm/sdata2.s \
-    asm/bss.s \
+    asm/main/init.s \
+    asm/main/text.s \
+    asm/main/extab.s \
+    asm/main/ctors.s \
+    asm/main/dtors.s \
+    asm/main/rodata.s \
+    asm/main/data.s \
+    asm/main/sdata.s \
+    asm/main/sbss.s \
+    asm/main/sdata2.s \
+    asm/main/bss.s \
 
 O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
 ALL_O_FILES := $(O_FILES)
@@ -115,18 +115,6 @@ ALL_RELS += start.rel
 ALL_REL_MAPS += start.map
 ALL_REL_ELFS += start.plf
 
-# client.rel sources
-SOURCES := \
-	 asm/client/client.s \
-
-O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
-ALL_O_FILES += $(O_FILES)
-client.plf: $(O_FILES)
-client.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3C -c 18
-ALL_RELS += client.rel
-ALL_REL_MAPS += client.map
-ALL_REL_ELFS += client.plf
-
 # alone.rel sources
 SOURCES := \
 	 asm/alone/alone.s \
@@ -134,10 +122,22 @@ SOURCES := \
 O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
 ALL_O_FILES += $(O_FILES)
 alone.plf: $(O_FILES)
-alone.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3C -c 18
+alone.rel: ELF2REL_ARGS := -i 2 -o 0x3A -l 0x3A -c 16
 ALL_RELS += alone.rel
 ALL_REL_MAPS += alone.map
 ALL_REL_ELFS += alone.plf
+
+# client.rel sources
+SOURCES := \
+	 asm/client/client.s \
+
+O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+ALL_O_FILES += $(O_FILES)
+client.plf: $(O_FILES)
+client.rel: ELF2REL_ARGS := -i 3 -o 0x74 -l 0x3C -c 18
+ALL_RELS += client.rel
+ALL_REL_MAPS += client.map
+ALL_REL_ELFS += client.plf
 
 #-------------------------------------------------------------------------------
 # Recipes

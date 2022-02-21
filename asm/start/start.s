@@ -1,30 +1,5 @@
-# id: 1
-# version: 3
-# nameoffset: 0x0, size: 0x3A
-# section table: 0x4C, size: 0x80
-# imp table: 0x16F50
-# relocs offset: 0x16F60
-# _prolog:     1:0x0
-# _epilog:     1:0x50
-# _unresolved: 1:0x9C
-# num sections: 16
 .include "macros.inc"
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x000000CC	length: 0x00010C54	flags: 1
-# offset: 0x00010D20	length: 0x00000060	flags: 0
-# offset: 0x00010D80	length: 0x00000008	flags: 0
-# offset: 0x00010D88	length: 0x00003E08	flags: 0
-# offset: 0x00014B90	length: 0x000023C0	flags: 0
-# offset: 0x10000000	length: 0x0000A458	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
-# offset: 0x00000000	length: 0x00000000	flags: 0
+
 # 1
 .section .text, "ax"
 .global _prolog
