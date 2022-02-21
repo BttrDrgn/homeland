@@ -28,7 +28,10 @@ lbl_8017C848:
 	.skip 0x428
 .global lbl_8017CC70
 lbl_8017CC70:
-	.skip 0x40
+	.skip 0x18
+.global lbl_8017CC88
+lbl_8017CC88:
+	.skip 0x28
 .global lbl_8017CCB0
 lbl_8017CCB0:
 	.skip 0x20
