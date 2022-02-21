@@ -304,19 +304,79 @@ lbl_800F49E8:
 	.incbin "baserom.dol", 0xF19E8, 0x10
 .global lbl_800F49F8
 lbl_800F49F8:
-	.incbin "baserom.dol", 0xF19F8, 0x30
+	.incbin "baserom.dol", 0xF19F8, 0x10
+.global lbl_800F4A08
+lbl_800F4A08:
+	.incbin "baserom.dol", 0xF1A08, 0x10
+.global lbl_800F4A18
+lbl_800F4A18:
+	.incbin "baserom.dol", 0xF1A18, 0x10
 .global lbl_800F4A28
 lbl_800F4A28:
-	.incbin "baserom.dol", 0xF1A28, 0x20
+	.incbin "baserom.dol", 0xF1A28, 0x10
+.global lbl_800F4A38
+lbl_800F4A38:
+	.incbin "baserom.dol", 0xF1A38, 0x10
 .global lbl_800F4A48
 lbl_800F4A48:
 	.incbin "baserom.dol", 0xF1A48, 0x10
 .global lbl_800F4A58
 lbl_800F4A58:
-	.incbin "baserom.dol", 0xF1A58, 0x20
+	.incbin "baserom.dol", 0xF1A58, 0x10
+.global lbl_800F4A68
+lbl_800F4A68:
+	.incbin "baserom.dol", 0xF1A68, 0x10
 .global lbl_800F4A78
 lbl_800F4A78:
-	.incbin "baserom.dol", 0xF1A78, 0x120
+	.incbin "baserom.dol", 0xF1A78, 0x10
+.global lbl_800F4A88
+lbl_800F4A88:
+	.incbin "baserom.dol", 0xF1A88, 0x10
+.global lbl_800F4A98
+lbl_800F4A98:
+	.incbin "baserom.dol", 0xF1A98, 0x10
+.global lbl_800F4AA8
+lbl_800F4AA8:
+	.incbin "baserom.dol", 0xF1AA8, 0x10
+.global lbl_800F4AB8
+lbl_800F4AB8:
+	.incbin "baserom.dol", 0xF1AB8, 0x10
+.global lbl_800F4AC8
+lbl_800F4AC8:
+	.incbin "baserom.dol", 0xF1AC8, 0x10
+.global lbl_800F4AD8
+lbl_800F4AD8:
+	.incbin "baserom.dol", 0xF1AD8, 0x10
+.global lbl_800F4AE8
+lbl_800F4AE8:
+	.incbin "baserom.dol", 0xF1AE8, 0x10
+.global lbl_800F4AF8
+lbl_800F4AF8:
+	.incbin "baserom.dol", 0xF1AF8, 0x10
+.global lbl_800F4B08
+lbl_800F4B08:
+	.incbin "baserom.dol", 0xF1B08, 0x10
+.global lbl_800F4B18
+lbl_800F4B18:
+	.incbin "baserom.dol", 0xF1B18, 0x10
+.global lbl_800F4B28
+lbl_800F4B28:
+	.incbin "baserom.dol", 0xF1B28, 0x10
+.global lbl_800F4B38
+lbl_800F4B38:
+	.incbin "baserom.dol", 0xF1B38, 0x10
+.global lbl_800F4B48
+lbl_800F4B48:
+	.incbin "baserom.dol", 0xF1B48, 0x10
+.global lbl_800F4B68
+lbl_800F4B68:
+	.incbin "baserom.dol", 0xF1B68, 0x10
+.global lbl_800F4B78
+lbl_800F4B78:
+	.incbin "baserom.dol", 0xF1B78, 0x10
+.global lbl_800F4B88
+lbl_800F4B88:
+	.incbin "baserom.dol", 0xF1B88, 0x10
 .global lbl_800F4B98
 lbl_800F4B98:
 	.incbin "baserom.dol", 0xF1B98, 0x10
