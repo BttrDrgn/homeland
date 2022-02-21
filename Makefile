@@ -103,41 +103,41 @@ O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
 ALL_O_FILES := $(O_FILES)
 $(ELF): $(O_FILES)
 
-# start.rel sources
-SOURCES := \
-	 asm/start/start.s \
+# # start.rel sources
+# SOURCES := \
+# 	 asm/start/start.s \
 
-O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
-ALL_O_FILES += $(O_FILES)
-start.plf: $(O_FILES)
-start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3A -c 16
-ALL_RELS += start.rel
-ALL_REL_MAPS += start.map
-ALL_REL_ELFS += start.plf
+# O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+# ALL_O_FILES += $(O_FILES)
+# start.plf: $(O_FILES)
+# start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3A -c 16
+# ALL_RELS += start.rel
+# ALL_REL_MAPS += start.map
+# ALL_REL_ELFS += start.plf
 
-# alone.rel sources
-SOURCES := \
-	 asm/alone/alone.s \
+# # alone.rel sources
+# SOURCES := \
+# 	 asm/alone/alone.s \
 
-O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
-ALL_O_FILES += $(O_FILES)
-alone.plf: $(O_FILES)
-alone.rel: ELF2REL_ARGS := -i 2 -o 0x3A -l 0x3A -c 16
-ALL_RELS += alone.rel
-ALL_REL_MAPS += alone.map
-ALL_REL_ELFS += alone.plf
+# O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+# ALL_O_FILES += $(O_FILES)
+# alone.plf: $(O_FILES)
+# alone.rel: ELF2REL_ARGS := -i 2 -o 0x3A -l 0x3A -c 16
+# ALL_RELS += alone.rel
+# ALL_REL_MAPS += alone.map
+# ALL_REL_ELFS += alone.plf
 
-# client.rel sources
-SOURCES := \
-	 asm/client/client.s \
+# # client.rel sources
+# SOURCES := \
+# 	 asm/client/client.s \
 
-O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
-ALL_O_FILES += $(O_FILES)
-client.plf: $(O_FILES)
-client.rel: ELF2REL_ARGS := -i 3 -o 0x74 -l 0x3C -c 18
-ALL_RELS += client.rel
-ALL_REL_MAPS += client.map
-ALL_REL_ELFS += client.plf
+# O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+# ALL_O_FILES += $(O_FILES)
+# client.plf: $(O_FILES)
+# client.rel: ELF2REL_ARGS := -i 3 -o 0x74 -l 0x3C -c 18
+# ALL_RELS += client.rel
+# ALL_REL_MAPS += client.map
+# ALL_REL_ELFS += client.plf
 
 #-------------------------------------------------------------------------------
 # Recipes
