@@ -77,10 +77,10 @@ endif
 # Files
 #-------------------------------------------------------------------------------
 
-BUILD_DIR := build/HomeLand
+BUILD_DIR := build
 DOL     := $(BUILD_DIR)/main.dol
 ELF     := $(DOL:.dol=.elf)
-MAP     := $(BUILD_DIR)/HomeLand.map
+MAP     := $(BUILD_DIR)/main.map
 
 DOL_LCF := lcf/static.lcf
 
@@ -157,7 +157,7 @@ all: $(DOL) $(ALL_RELS)
 
 %.elf: $(DOL_LCF)
 	@echo Linking static module $@
-	$(QUIET) $(LD) -lcf $(DOL_LCF) $(DOL_LDFLAGS) $(filter %.o,$^) -o $@
+	$(QUIET) $(LD) -lcf $(DOL_LCF) $(DOL_LDFLAGS) $(filter %.o,$^) -map $(@:.elf=.map) -o $@
 
 # relocatable module (.rel file)
 %.rel: %.plf $(ELF) $(ELF2REL)
@@ -206,12 +206,12 @@ DEP_FILES := $(addsuffix .dep,$(basename $(ALL_O_FILES)))
 # Tool Recipes
 #-------------------------------------------------------------------------------
 
-#$(ELF2DOL): tools/elf2dol.c
-	#@echo Building tool $@
-	#$(QUIET) $(HOSTCC) $(HOSTCFLAGS) -o $@ $^
+$(ELF2DOL): tools/elf2dol.c
+	@echo Building tool $@
+	$(QUIET) $(HOSTCC) $(HOSTCFLAGS) -o	 $@ $^
 
-#$(ELF2REL): tools/elf2rel.c
-	#@echo Building tool $@
-	#$(QUIET) $(HOSTCC) $(HOSTCFLAGS) -o $@ $^
+$(ELF2REL): tools/elf2rel.c
+	@echo Building tool $@
+	$(QUIET) $(HOSTCC) $(HOSTCFLAGS) -o $@ $^
 
 print-% : ; $(info $* is a $(flavor $*) variable set to [$($*)]) @true

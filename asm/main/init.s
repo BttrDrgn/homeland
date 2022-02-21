@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .init
+.section .init # 0x80003100 - 0x80005600
 
 .global func_80003100
 func_80003100:
