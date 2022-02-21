@@ -175,7 +175,13 @@ lbl_800F4668:
 	.incbin "baserom.dol", 0xF1668, 0x10
 .global lbl_800F4678
 lbl_800F4678:
-	.incbin "baserom.dol", 0xF1678, 0x30
+	.incbin "baserom.dol", 0xF1678, 0x10
+.global lbl_800F4688
+lbl_800F4688:
+	.incbin "baserom.dol", 0xF1688, 0x10
+.global lbl_800F4698
+lbl_800F4698:
+	.incbin "baserom.dol", 0xF1698, 0x10
 .global lbl_800F46A8
 lbl_800F46A8:
 	.incbin "baserom.dol", 0xF16A8, 0x10
