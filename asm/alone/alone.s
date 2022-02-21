@@ -29,14 +29,6 @@ error: symbol for 0x804D5C94 not found
 error: symbol for 0x804D5C94 not found
 error: symbol for 0x804D5C9C not found
 error: symbol for 0x804D5C9C not found
-error: symbol for 0x800F49E8 not found
-error: symbol for 0x800F49E8 not found
-error: symbol for 0x800F4A28 not found
-error: symbol for 0x800F4A28 not found
-error: symbol for 0x800F49F8 not found
-error: symbol for 0x800F49F8 not found
-error: symbol for 0x800F4A48 not found
-error: symbol for 0x800F4A48 not found
 error: symbol for 0x800F4A78 not found
 error: symbol for 0x800F4A78 not found
 error: symbol for 0x800F4A58 not found
@@ -47,14 +39,6 @@ error: symbol for 0x800F4A38 not found
 error: symbol for 0x800F4A38 not found
 error: symbol for 0x800F4A18 not found
 error: symbol for 0x800F4A18 not found
-error: symbol for 0x800F49E8 not found
-error: symbol for 0x800F49E8 not found
-error: symbol for 0x800F4A28 not found
-error: symbol for 0x800F4A28 not found
-error: symbol for 0x800F49F8 not found
-error: symbol for 0x800F49F8 not found
-error: symbol for 0x800F4A48 not found
-error: symbol for 0x800F4A48 not found
 error: symbol for 0x800F4A78 not found
 error: symbol for 0x800F4A78 not found
 error: symbol for 0x800F4A58 not found
@@ -95,8 +79,6 @@ error: symbol for 0x804D9650 not found
 error: symbol for 0x804D9650 not found
 error: symbol for 0x804D9700 not found
 error: symbol for 0x804D9700 not found
-error: symbol for 0x800F47E8 not found
-error: symbol for 0x800F47E8 not found
 error: symbol for 0x800F5AB0 not found
 error: symbol for 0x800F5AB0 not found
 error: symbol for 0x804D5CA0 not found
@@ -171,8 +153,6 @@ error: symbol for 0x804D5CA8 not found
 error: symbol for 0x804D5CA8 not found
 error: symbol for 0x800F45A8 not found
 error: symbol for 0x800F45A8 not found
-error: symbol for 0x800F47E8 not found
-error: symbol for 0x800F47E8 not found
 error: symbol for 0x800F4518 not found
 error: symbol for 0x800F4518 not found
 error: symbol for 0x800F47D8 not found
