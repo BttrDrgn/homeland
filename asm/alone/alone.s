@@ -1,3 +1,30 @@
+# id: 2
+# version: 3
+# nameoffset: 0x3A, size: 0x3A
+# section table: 0x4C, size: 0x80
+# imp table: 0x1DDEEC
+# relocs offset: 0x1DDEFC
+# _prolog:     1:0x0
+# _epilog:     1:0x50
+# _unresolved: 1:0x9C
+# num sections: 16
+.include "macros.inc"
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x000000CC	length: 0x0014BCF0	flags: 1
+# offset: 0x0014BDBC	length: 0x00000A9C	flags: 0
+# offset: 0x0014C858	length: 0x00000008	flags: 0
+# offset: 0x0014C860	length: 0x00061ECC	flags: 0
+# offset: 0x001AE730	length: 0x0002F7BC	flags: 0
+# offset: 0x10000000	length: 0x000AC38C	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
 error: symbol for 0x804D964C not found
 error: symbol for 0x804D964C not found
 error: symbol for 0x804D5C94 not found
@@ -264,12 +291,6 @@ error: symbol for 0x804D5C98 not found
 error: symbol for 0x804D5C98 not found
 error: symbol for 0x804D91A8 not found
 error: symbol for 0x804D91A8 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x804D9532 not found
 error: symbol for 0x804D9532 not found
 error: symbol for 0x804D9532 not found
@@ -320,5 +341,3 @@ error: symbol for 0x804D9088 not found
 error: symbol for 0x804D9088 not found
 error: symbol for 0x804D9708 not found
 error: symbol for 0x804D9708 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found

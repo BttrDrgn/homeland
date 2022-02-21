@@ -1,3 +1,32 @@
+# id: 4
+# version: 3
+# nameoffset: 0xB0, size: 0x3C
+# section table: 0x4C, size: 0x90
+# imp table: 0x152EF4
+# relocs offset: 0x152F04
+# _prolog:     1:0x0
+# _epilog:     1:0x50
+# _unresolved: 1:0x9C
+# num sections: 18
+.include "macros.inc"
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x000000DC	length: 0x000F9DA4	flags: 1
+# offset: 0x000F9E80	length: 0x00000710	flags: 0
+# offset: 0x000FA590	length: 0x00000008	flags: 0
+# offset: 0x000FA598	length: 0x0003D428	flags: 0
+# offset: 0x001379C0	length: 0x0001B534	flags: 0
+# offset: 0x10000000	length: 0x000BD942	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
+# offset: 0x00000000	length: 0x00000000	flags: 0
 error: symbol for 0x804D964C not found
 error: symbol for 0x804D964C not found
 error: symbol for 0x804D9694 not found
@@ -70,8 +99,6 @@ error: symbol for 0x804D9534 not found
 error: symbol for 0x804D9534 not found
 error: symbol for 0x804D9088 not found
 error: symbol for 0x804D9088 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x804D959C not found
 error: symbol for 0x804D95A0 not found
 error: symbol for 0x804D959C not found
@@ -80,30 +107,10 @@ error: symbol for 0x804D9664 not found
 error: symbol for 0x804D9664 not found
 error: symbol for 0x804D9664 not found
 error: symbol for 0x804D9664 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x804D9530 not found
 error: symbol for 0x800E2D10 not found
 error: symbol for 0x800E2D10 not found
 error: symbol for 0x804D9530 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x8017C714 not found
 error: symbol for 0x8017C714 not found
 error: symbol for 0x8017C714 not found
@@ -114,8 +121,6 @@ error: symbol for 0x8017C714 not found
 error: symbol for 0x8017C714 not found
 error: symbol for 0x8017C714 not found
 error: symbol for 0x8017C714 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x804D954C not found
 error: symbol for 0x804D9586 not found
 error: symbol for 0x804D954C not found
@@ -176,8 +181,6 @@ error: symbol for 0x804D9574 not found
 error: symbol for 0x804D9574 not found
 error: symbol for 0x804D9578 not found
 error: symbol for 0x804D9578 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x804D9708 not found
 error: symbol for 0x804D9708 not found
 error: symbol for 0x804D6CD8 not found
@@ -206,8 +209,6 @@ error: symbol for 0x800F49A8 not found
 error: symbol for 0x800F49A8 not found
 error: symbol for 0x804D5C9C not found
 error: symbol for 0x804D5C9C not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x800F47F8 not found
 error: symbol for 0x800F47F8 not found
 error: symbol for 0x800F47E8 not found
@@ -224,18 +225,6 @@ error: symbol for 0x800F4728 not found
 error: symbol for 0x800F4728 not found
 error: symbol for 0x804D5C98 not found
 error: symbol for 0x804D5C98 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x804D96C8 not found
 error: symbol for 0x804D96C8 not found
 error: symbol for 0x804D96C4 not found
@@ -358,10 +347,6 @@ error: symbol for 0x800F4CEC not found
 error: symbol for 0x800F4CEC not found
 error: symbol for 0x800F4CD8 not found
 error: symbol for 0x800F4CD8 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
-error: symbol for 0x8017C690 not found
 error: symbol for 0x804D9664 not found
 error: symbol for 0x804D9664 not found
 error: symbol for 0x804D9654 not found
