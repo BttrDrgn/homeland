@@ -99,6 +99,7 @@ SOURCES := \
     asm/main/sdata.s \
     asm/main/sbss.s \
     asm/main/sdata2.s \
+    asm/main/sbss2.s \
     asm/main/bss.s \
 
 O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
