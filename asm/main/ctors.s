@@ -1,27 +1,4 @@
 .section .ctors, "wa"  # 0x800E2460 - 0x800E2760
 .global lbl_800E2460
 lbl_800E2460:
-	.4byte 0x800CDEC8
-	.4byte 0x800056C8
-	.4byte 0x80005B90
-	.4byte 0x80005C6C
-	.4byte 0x80006F64
-	.4byte 0x800072C4
-	.4byte 0x80007454
-	.4byte 0x80007640
-	.4byte 0x80007A54
-	.4byte 0x80007C28
-	.4byte 0x800080F0
-	.4byte 0x800081E8
-	.4byte 0x8000866C
-	.4byte 0x80008DB8
-	.4byte 0x800090F4
-	.4byte 0x8000948C
-	.4byte 0x80009B94
-	.4byte 0x8000A6BC
-	.4byte 0x8000B66C
-	.4byte 0x8000BEAC
-	.4byte 0x8000C034
-	.4byte 0x8000C33C
-	.4byte 0x8000D2B4
-	.4byte 0x8000D4CC
+	.incbin "baserom.dol", 0xDF460, 0x2E4
