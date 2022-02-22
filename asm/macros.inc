@@ -177,8 +177,8 @@ Entry Point: 0x80003154
 .set qr6, 6
 .set qr7, 7
 # Small Data Area (read/write) Base
-.set _SDA_BASE_, 0x804DD320
+#.set _SDA_BASE_, 0x804DD320
 # Small Data Area (read only) Base
-.set _SDA2_BASE_, 0x804E1020
+#.set _SDA2_BASE_, 0x804E1020
 
 .set NULL, 0
