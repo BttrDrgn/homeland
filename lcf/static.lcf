@@ -33,4 +33,5 @@ SECTIONS
 
 FORCEFILES {
 	extab.o
+	ctors.o
 }
