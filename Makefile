@@ -82,6 +82,8 @@ DOL     := $(BUILD_DIR)/main.dol
 ELF     := $(DOL:.dol=.elf)
 MAP     := $(BUILD_DIR)/main.map
 
+ALL_DIRS += $(BUILD_DIR)
+
 DOL_LCF := lcf/static.lcf
 
 # TODO: REL support
@@ -105,6 +107,7 @@ SOURCES := \
 
 O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
 ALL_O_FILES := $(O_FILES)
+DUMMY != mkdir -p $(ALL_DIRS)
 $(ELF): $(O_FILES)
 
 # # start.rel sources
