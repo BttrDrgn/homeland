@@ -1,4 +1,19 @@
 .section extab_, "wa"  # 0x80005600 - 0x80005640
-	.incbin "baserom.dol", 0xDF3C0, 0x40
+	.4byte 0x20080000
+	.4byte 0x00000000
+	.4byte 0x20080000
+	.4byte 0x00000060
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x82000008
+	.4byte 0x800CD63C
+	.4byte 0x18080000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
     
