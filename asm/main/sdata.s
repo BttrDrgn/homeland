@@ -517,4 +517,4 @@ lbl_804D6CE0:
 	.incbin "baserom.dol", 0x17AFC0, 0x8
 .global lbl_804D6CE8
 lbl_804D6CE8:
-	.incbin "baserom.dol", 0x17AFC8, 0x18
+	.incbin "baserom.dol", 0x17AFC8, 0x1

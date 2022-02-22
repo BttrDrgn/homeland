@@ -8,4 +8,3 @@ __fini_cpp_exceptions_reference:
 .global __destroy_global_chain_reference_1
 __destroy_global_chain_reference_1:
 	.4byte 0x800CD438
-	.4byte 0x00000000
