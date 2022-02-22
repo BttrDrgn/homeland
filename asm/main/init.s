@@ -2436,18 +2436,18 @@ lbl_80005544:
 /* 800055A4 000025A4  80 4D 53 20 */	lwz r2, 0x5320(r13)
 /* 800055A8 000025A8  80 4D 53 20 */	lwz r2, 0x5320(r13)
 /* 800055AC 000025AC  00 00 19 C9 */	.4byte 0x000019C9  /* unknown instruction */
-/* 800055B0 000025B0  80 4D 90 20 */	lwz r2, lbl_804D6340-_SDA_BASE_(r13)
-/* 800055B4 000025B4  80 4D 90 20 */	lwz r2, lbl_804D6340-_SDA_BASE_(r13)
+/* 800055B0 000025B0  80 4D 90 20 */	.4byte 0x804D9020
+/* 800055B4 000025B4  80 4D 90 20 */	.4byte 0x804D9020
 /* 800055B8 000025B8  00 00 17 28 */	.4byte 0x00001728  /* unknown instruction */
 /* 800055BC 000025BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800055C0 000025C0  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800055C4 000025C4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 lbl_800055C8:
-/* 800055C8 000025C8  80 17 C6 00 */	lwz r0, -0x3a00(r23)
+/* 800055C8 000025C8  80 17 C6 00 */	.4byte 0x8017C600
 /* 800055CC 000025CC  00 35 8D 1C */	.4byte 0x00358D1C  /* unknown instruction */
 /* 800055D0 000025D0  80 4D 6D 00 */	lwz r2, 0x6d00(r13)
 /* 800055D4 000025D4  00 00 23 14 */	.4byte 0x00002314  /* unknown instruction */
-/* 800055D8 000025D8  80 4D A7 60 */	lwz r2, lbl_804D7A80-_SDA_BASE_(r13)
+/* 800055D8 000025D8  80 4D A7 60 */	.4byte 0x804DA760
 /* 800055DC 000025DC  00 00 00 20 */	.4byte 0x00000020  /* unknown instruction */
 /* 800055E0 000025E0  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800055E4 000025E4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
