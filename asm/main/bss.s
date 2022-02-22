@@ -1273,4 +1273,5 @@ lbl_804D4E00:
 	.skip 0x500
 .global lbl_804D5300
 lbl_804D5300:
-	.skip 0x1A00
+	.skip 0x20
+	

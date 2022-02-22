@@ -6109,5 +6109,5 @@ lbl_804D9008:
 	.skip 0x8
 .global lbl_804D9010
 lbl_804D9010:
-	.skip 0x1750
+	.skip 0x10
 	

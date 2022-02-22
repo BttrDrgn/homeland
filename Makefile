@@ -10,9 +10,9 @@ endif
 
 # Unknown what actual compiler version it uses
 COMPILER_VERSION ?= 2.6
-LINKER_VERSION ?= 1.0
+LINKER_VERSION ?= 2.6
 
-VERBOSE ?= 1
+VERBOSE ?= 0
 
 # Don't echo build commands unless VERBOSE is set
 ifeq ($(VERBOSE),0)
@@ -92,6 +92,7 @@ SOURCES := \
     asm/main/init.s \
     asm/main/text.s \
     asm/main/extab.s \
+    asm/main/extabindex.s \
     asm/main/ctors.s \
     asm/main/dtors.s \
     asm/main/rodata.s \

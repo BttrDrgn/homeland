@@ -21,3 +21,4 @@ lbl_804DA778:
 .global lbl_804DA77C
 lbl_804DA77C:
     .skip 0x4
+    
