@@ -14,7 +14,7 @@ tools/mwcc_compiler/
 tools/elf2dol
 tools/elf2rel
 tools/lzss
-*.exe
+tools/*.exe
 
 # Temporary files
 *.sw*
