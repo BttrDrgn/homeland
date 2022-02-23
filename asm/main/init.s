@@ -1040,8 +1040,6 @@ lbl_80003610:
 /* 80003FF4 00000FF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80003FF8 00000FF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80003FFC 00000FFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-.global lbl_80004000
-lbl_80004000:
 /* 80004000 00001000  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004004 00001004  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004008 00001008  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -2070,8 +2068,6 @@ lbl_80004814:
 /* 80004FF4 00001FF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004FF8 00001FF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004FFC 00001FFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-.global lbl_80005000
-lbl_80005000:
 /* 80005000 00002000  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005004 00002004  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005008 00002008  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
