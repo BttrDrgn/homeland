@@ -389,36 +389,6 @@ lbl_800E2C98:
 	.4byte 0x00000000
 .global lbl_800E2D10
 lbl_800E2D10:
-	.4byte 0x800F8568
-	.4byte 0x800F85D0
-	.4byte 0x804D5AE8
-	.4byte 0x804D5AF0
-	.4byte 0x800F858C
-	.4byte 0x804D5AF8
-	.4byte 0x804D5B00
-	.4byte 0x804D5B08
-	.4byte 0x800F85E4
-	.4byte 0x800F85A4
-	.4byte 0x804D5B10
-	.4byte 0x800F85B0
-	.4byte 0x804D5B18
-	.4byte 0x804D5B18
-	.4byte 0x800F85F0
-	.4byte 0x804D5B18
-	.4byte 0x804D5B30
-	.4byte 0x804D5B38
-	.4byte 0x804D5B3C
-	.4byte 0x00000000
-	.4byte 0x804D5B44
-	.4byte 0x804D5B48
-	.4byte 0x804D5B4C
-	.4byte 0x804D5B50
-	.4byte 0x00000000
-	.4byte 0x804D5B54
-	.4byte 0x804D5B58
-	.4byte 0x804D5B5C
-	.4byte 0x804D5B60
-	.4byte 0x00000000
 	.4byte 0x6E6A7A62
 	.4byte 0x6E707570
 	.4byte 0x2E636875
@@ -463,6 +433,36 @@ lbl_800E2E1C:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x61626364
+	.4byte 0x65666768
+	.4byte 0x00000000
+	.4byte 0x61626364
+	.4byte 0x65666768
+	.4byte 0x00000000
 .global lbl_800E2E28
 lbl_800E2E28:
 	.4byte 0x00000000
@@ -505,11 +505,11 @@ lbl_800E2E28:
 	.4byte 0x00000418
 .global lbl_800E2EC0
 lbl_800E2EC0:
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.4byte 0x800F93FC
+	.4byte 0x800F9468
+	.4byte 0x800F94D0
+	.4byte 0x800F9548
+	.4byte 0x800F95E8
 	.4byte 0x00000000
 .global lbl_800E2ED8
 lbl_800E2ED8:
@@ -18929,6 +18929,12 @@ lbl_800F4B48:
 	.4byte 0x3EF00000
 	.4byte 0x3E900000
 	.4byte 0x3F180000
+.global lbl_800F4B58
+lbl_800F4B58:
+	.4byte 0x3E900000
+	.4byte 0x3EF00000
+	.4byte 0x3ED00000
+	.4byte 0x3F180000
 .global lbl_800F4B68
 lbl_800F4B68:
 	.4byte 0x3ED00000
@@ -21039,7 +21045,3 @@ lbl_800F6850:
 	.4byte 0x20455849
 	.4byte 0x325F496E
 	.4byte 0x69740A00
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
