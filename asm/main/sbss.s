@@ -4702,7 +4702,11 @@ lbl_804D8804:
 	.skip 0x4
 .global lbl_804D8808
 lbl_804D8808:
-	.skip 0x10
+	.skip 0x8
+.global Debug_BBA
+Debug_BBA:
+	.skip 1
+.balign 8
 .global lbl_804D8818
 lbl_804D8818:
 	.skip 0x8
