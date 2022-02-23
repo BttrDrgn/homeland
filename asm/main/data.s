@@ -11616,7 +11616,7 @@ lbl_800FBD40:
 	.4byte 0x80008000
 	.4byte 0x80008000
 	.4byte 0x80008000
-	.4byte lbl_8000FF00
+	.4byte 0x8000FF00
 	.4byte 0x80008000
 	.4byte 0x80008000
 	.4byte 0x80008000
@@ -12108,7 +12108,7 @@ lbl_800FBD40:
 	.4byte 0x80008000
 	.4byte 0xD9C0FF00
 	.4byte 0x80008000
-	.4byte lbl_8000B900
+	.4byte 0x8000B900
 	.4byte 0x80008000
 	.4byte 0x80008000
 	.4byte 0x80008000
@@ -12123,7 +12123,7 @@ lbl_800FBD40:
 	.4byte 0x80008000
 	.4byte 0x80008000
 	.4byte 0xFF00FF00
-	.4byte lbl_8000FF00
+	.4byte 0x8000FF00
 	.4byte 0xFF00D9C0
 	.4byte 0x80008000
 	.4byte 0x80008000
@@ -14806,7 +14806,7 @@ lbl_800FBD40:
 	.4byte 0xB18CB18C
 	.4byte 0xB18CB18C
 	.4byte 0xEBFFE7FF
-	.4byte lbl_8000B18C
+	.4byte 0x8000B18C
 	.4byte 0x91B691B6
 	.4byte 0xB18CB18C
 	.4byte 0x00000000
@@ -16598,9 +16598,9 @@ lbl_800FBD40:
 	.4byte 0x00000000
 	.4byte 0x80008000
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x80000000
@@ -17106,13 +17106,13 @@ lbl_800FBD40:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0xFFE0FFE0
 	.4byte 0xFA8B8000
 	.4byte 0xFFE0FFE0
@@ -17618,13 +17618,13 @@ lbl_800FBD40:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0xFFE0FFE0
 	.4byte 0xFFE0FFE0
 	.4byte 0xFFE0FFE0
@@ -18130,13 +18130,13 @@ lbl_800FBD40:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0xFFE0FFE0
 	.4byte 0xFFE0FFE0
 	.4byte 0xFFE0FFE0
@@ -18642,13 +18642,13 @@ lbl_800FBD40:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0xFFE0FFE0
 	.4byte 0xFFE0FFE0
 	.4byte 0xFFE0FFE0
@@ -19154,9 +19154,9 @@ lbl_800FBD40:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
-	.4byte lbl_8000FFE0
+	.4byte 0x8000FFE0
 	.4byte 0x00000000
 	.4byte 0x80008000
 	.4byte 0x00000000
@@ -35116,7 +35116,7 @@ lbl_800FBD40:
 	.4byte 0xFFFFF39C
 	.4byte 0x8000DAD6
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8000B18C
+	.4byte 0x8000B18C
 	.4byte 0xFFFFFFFF
 	.4byte 0xEB5A8000
 	.4byte 0xFFFFFFFF
@@ -35640,7 +35640,7 @@ lbl_800FBD40:
 	.4byte 0xFFFFFFFF
 	.4byte 0xC6318000
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8000D294
+	.4byte 0x8000D294
 	.4byte 0x8000DAD6
 	.4byte 0xDEF7DEF7
 	.4byte 0xB9CEDEF7
@@ -38719,7 +38719,7 @@ lbl_800FBD40:
 	.4byte 0xFFFF0000
 	.4byte 0x8421A96C
 	.4byte 0xFFFF0000
-	.4byte lbl_8000A96C
+	.4byte 0x8000A96C
 	.4byte 0xFFFF0000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -40096,7 +40096,7 @@ lbl_800FBD40:
 	.4byte 0x00008000
 	.4byte 0x80008000
 	.4byte 0x80008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x80008000
@@ -40223,7 +40223,7 @@ lbl_800FBD40:
 	.4byte 0x80008000
 	.4byte 0x80008000
 	.4byte 0x80008000
-	.4byte lbl_8000CD40
+	.4byte 0x8000CD40
 	.4byte 0xCD40CD40
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -40240,7 +40240,7 @@ lbl_800FBD40:
 	.4byte 0x00008000
 	.4byte 0x80008000
 	.4byte 0x80008000
-	.4byte lbl_8000CD40
+	.4byte 0x8000CD40
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x80008000
@@ -40591,24 +40591,24 @@ lbl_800FBD40:
 	.4byte 0x80008000
 	.4byte 0x80008000
 	.4byte 0x80008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC04FFFF
 	.4byte 0x00008000
 	.4byte 0x80008000
 	.4byte 0x80008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0x80008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFFFF8000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0x80008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC048000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC048000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC048000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC048000
 	.4byte 0x80008000
 	.4byte 0xFC04FC04
@@ -40729,7 +40729,7 @@ lbl_800FBD40:
 	.4byte 0x00008000
 	.4byte 0x00008000
 	.4byte 0x80008000
-	.4byte lbl_8000CD40
+	.4byte 0x8000CD40
 	.4byte 0xCD40CD40
 	.4byte 0x8000FFB5
 	.4byte 0xFFB5F744
@@ -40746,7 +40746,7 @@ lbl_800FBD40:
 	.4byte 0xCD40CD40
 	.4byte 0xCD40F744
 	.4byte 0x80008000
-	.4byte lbl_8000CD40
+	.4byte 0x8000CD40
 	.4byte 0xCD40F744
 	.4byte 0xF744FFB5
 	.4byte 0xCD40F744
@@ -41092,12 +41092,12 @@ lbl_800FBD40:
 	.4byte 0x00008000
 	.4byte 0x80008000
 	.4byte 0x00008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0x00008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0x00008000
-	.4byte lbl_8000FC04
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC04FFFF
 	.4byte 0xFC04C463
 	.4byte 0xC463C463
@@ -41106,7 +41106,7 @@ lbl_800FBD40:
 	.4byte 0xFC04C463
 	.4byte 0xC463C463
 	.4byte 0xFFFF8000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xC463C463
 	.4byte 0xC463FC04
 	.4byte 0xC463C463
@@ -41114,7 +41114,7 @@ lbl_800FBD40:
 	.4byte 0xC463C463
 	.4byte 0xC463C463
 	.4byte 0xFC048000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC04FC04
 	.4byte 0xFC04FC04
 	.4byte 0xFC04FC04
@@ -41602,13 +41602,13 @@ lbl_800FBD40:
 	.4byte 0x80000000
 	.4byte 0x00000000
 	.4byte 0x00008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0x00008000
 	.4byte 0x80008000
 	.4byte 0x00008000
 	.4byte 0x80008000
 	.4byte 0x00008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC04C463
 	.4byte 0xC463C463
 	.4byte 0x8000C463
@@ -41943,7 +41943,7 @@ lbl_800FBD40:
 	.4byte 0xFFFFD6B5
 	.4byte 0xA108FFFF
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8000E318
+	.4byte 0x8000E318
 	.4byte 0xFFFFFFFF
 	.4byte 0xC631DEF7
 	.4byte 0xDEF7DEF7
@@ -42114,7 +42114,7 @@ lbl_800FBD40:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00008000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0x00008000
 	.4byte 0x80008000
 	.4byte 0x00008000
@@ -42123,9 +42123,9 @@ lbl_800FBD40:
 	.4byte 0x00008000
 	.4byte 0xFC04C463
 	.4byte 0xC463EE90
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC048000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC048000
 	.4byte 0x80008000
 	.4byte 0x80008000
@@ -42139,9 +42139,9 @@ lbl_800FBD40:
 	.4byte 0x00008000
 	.4byte 0xC463C463
 	.4byte 0xC463FC04
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC048000
-	.4byte lbl_8000FC04
+	.4byte 0x8000FC04
 	.4byte 0xFC048000
 	.4byte 0x80008000
 	.4byte 0x80008000
@@ -82847,7 +82847,7 @@ lbl_800FBD40:
 	.4byte 0x08FF0000
 	.4byte 0x000FF000
 	.4byte 0x0008F800
-	.4byte lbl_8000FF00
+	.4byte 0x8000FF00
 	.4byte 0xF000FF00
 	.4byte 0x00000000
 	.4byte 0x00000000
