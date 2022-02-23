@@ -7,6 +7,6 @@ lbl_80005600:
 	.4byte 0x00000010
 	.4byte 0x00000000
 	.4byte 0x82000008
-	.4byte 0x800CD63C
+	.4byte lbl_800CD63C
 	.4byte 0x18080000
 	.4byte 0x00000000
