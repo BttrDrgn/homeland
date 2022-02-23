@@ -35,6 +35,7 @@ OBJCOPY := $(DEVKITPPC)/bin/powerpc-eabi-objcopy
 OBJDUMP := $(DEVKITPPC)/bin/powerpc-eabi-objdump
 GCC     := $(DEVKITPPC)/bin/powerpc-eabi-gcc
 HOSTCC  := cc
+SHA1SUM := sha1sum
 ELF2DOL := tools/elf2dol$(EXE)
 ELF2REL := tools/elf2rel$(EXE)
 
@@ -153,7 +154,7 @@ $(ELF): $(O_FILES)
 .PHONY: all default
 
 all: $(DOL) $(ALL_RELS)
-	$(QUIET)
+	$(QUIET) $(SHA1SUM) -c homeland.sha1
 
 # static module (.dol file)
 %.dol: %.elf $(ELF2DOL)
