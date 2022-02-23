@@ -94,7 +94,6 @@ REL_LCF := lcf/partial.lcf
 SOURCES := \
     asm/main/init.s \
     asm/main/text.s \
-    asm/main/extab.s \
     asm/main/extabindex.s \
     asm/main/ctors.s \
     asm/main/dtors.s \
