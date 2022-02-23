@@ -121711,13 +121711,13 @@ lbl_8016D330:
 	.4byte 0x640000FF
 	.4byte 0x1435C8FF
 	.4byte 0x005A00FF
-.global lbl_8016D368
-lbl_8016D368:
+.global s_Font
+s_Font:
 	.4byte 0x466F6E74
 	.4byte 0x2E637070
 	.4byte 0x00000000
-.global lbl_8016D374
-lbl_8016D374:
+.global s_ROM_Font
+s_ROM_Font:
 	.4byte 0x524F4D20
 	.4byte 0x666F6E74
 	.4byte 0x20697320
