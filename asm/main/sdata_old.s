@@ -32,8 +32,8 @@ lbl_804D5690:
 .global lbl_804D5698
 lbl_804D5698:
 	.incbin "baserom.dol", 0x179978, 0x20
-.global lbl_804D56B8
-lbl_804D56B8:
+.global __OSCurrHeap
+__OSCurrHeap:
 	.incbin "baserom.dol", 0x179998, 0x90
 .global lbl_804D5748
 lbl_804D5748:
@@ -431,8 +431,8 @@ lbl_804D6C88:
 .global lbl_804D6C90
 lbl_804D6C90:
 	.incbin "baserom.dol", 0x17AF70, 0x8
-.global lbl_804D6C98
-lbl_804D6C98:
+.global fragmentID
+fragmentID:
 	.incbin "baserom.dol", 0x17AF78, 0x8
 .global lbl_804D6CA0
 lbl_804D6CA0:
@@ -443,8 +443,8 @@ lbl_804D6CA8:
 .global lbl_804D6CB0
 lbl_804D6CB0:
 	.incbin "baserom.dol", 0x17AF90, 0x4
-.global lbl_804D6CB4
-lbl_804D6CB4:
+.global __float_huge
+__float_huge:
 	.incbin "baserom.dol", 0x17AF94, 0x4
 .global lbl_804D6CB8
 lbl_804D6CB8:

@@ -276,8 +276,8 @@ lbl_804D5698:
 	.4byte 0x800F7390  ;# ptr
 	.4byte 0x800F73A8  ;# ptr
 
-.global lbl_804D56B8
-lbl_804D56B8:
+.global __OSCurrHeap
+__OSCurrHeap:
 	# ROM: 0x179998
 	.4byte 0xFFFFFFFF
 	.4byte 0
@@ -2160,8 +2160,8 @@ lbl_804D6C90:
 	.4byte 0x1EC00000
 	.4byte 0
 
-.global lbl_804D6C98
-lbl_804D6C98:
+.global fragmentID
+fragmentID:
 	# ROM: 0x17AF78
 	.4byte 0xFFFFFFFE
 	.4byte 0
@@ -2183,8 +2183,8 @@ lbl_804D6CB0:
 	# ROM: 0x17AF90
 	.4byte 0x7FFFFFFF
 
-.global lbl_804D6CB4
-lbl_804D6CB4:
+.global __float_huge
+__float_huge:
 	# ROM: 0x17AF94
 	.4byte 0x7F800000
 

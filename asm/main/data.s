@@ -136983,8 +136983,8 @@ lbl_80179C80:
 	.4byte 0x8000029C
 	.4byte 0x0F5802DF
 	.4byte 0x00000000
-.global lbl_8017BB40
-lbl_8017BB40:
+.global __files
+__files:
 	.4byte 0x00000000
 	.4byte 0x0A800000
 	.4byte 0x00000000
@@ -137159,8 +137159,8 @@ lbl_8017BCC0:
 	.4byte lbl_800D1748
 	.4byte lbl_800D1844
 	.4byte 0x00000000
-.global lbl_8017BDE8
-lbl_8017BDE8:
+.global __ctype_map
+__ctype_map:
 	.4byte 0x01010101
 	.4byte 0x01010101
 	.4byte 0x01020202
@@ -137225,8 +137225,8 @@ lbl_8017BDE8:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-.global lbl_8017BEE8
-lbl_8017BEE8:
+.global __lower_map
+__lower_map:
 	.4byte 0x00010203
 	.4byte 0x04050607
 	.4byte 0x08090A0B

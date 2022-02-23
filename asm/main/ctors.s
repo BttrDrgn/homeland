@@ -1,7 +1,7 @@
 .section .ctors, "wa"  # 0x800E2460 - 0x800E2760
-.global lbl_800E2460
-lbl_800E2460:
-	.4byte lbl_800CDEC8
+.global __init_cpp_exceptions_reference
+__init_cpp_exceptions_reference:
+	.4byte __init_cpp_exceptions
 	.4byte lbl_800056C8
 	.4byte lbl_80005B90
 	.4byte lbl_80005C6C

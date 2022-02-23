@@ -1208,8 +1208,8 @@ lbl_804D0180:
 .global lbl_804D01E0
 lbl_804D01E0:
 	.skip 0x2000
-.global lbl_804D21E0
-lbl_804D21E0:
+.global fragmentinfo
+fragmentinfo:
 	.skip 0x10
 .global lbl_804D21F0
 lbl_804D21F0:

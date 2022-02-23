@@ -6060,17 +6060,17 @@ lbl_804D8FA4:
 .global lbl_804D8FA8
 lbl_804D8FA8:
 	.skip 0x8
-.global lbl_804D8FB0
-lbl_804D8FB0:
+.global __aborting
+__aborting:
 	.skip 0x4
-.global lbl_804D8FB4
-lbl_804D8FB4:
+.global __atexit_curr_func
+__atexit_curr_func:
 	.skip 0x4
-.global lbl_804D8FB8
-lbl_804D8FB8:
+.global __stdio_exit
+__stdio_exit:
 	.skip 0x4
-.global lbl_804D8FBC
-lbl_804D8FBC:
+.global __console_exit
+__console_exit:
 	.skip 0x4
 .global lbl_804D8FC0
 lbl_804D8FC0:
