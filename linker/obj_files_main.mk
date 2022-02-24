@@ -5,6 +5,8 @@ SOURCES :=\
 	$(BUILD_DIR)/asm/main/sbss.o\
 	$(BUILD_DIR)/src/main/Dolphin/__start.o\
     $(BUILD_DIR)/asm/main/init.o\
+    $(BUILD_DIR)/asm/main/Dolphin/__exception.o\
+    $(BUILD_DIR)/asm/main/Dolphin/dolphin_trk.o\
     $(BUILD_DIR)/asm/main/text.o\
     $(BUILD_DIR)/asm/main/extabindex.o\
     $(BUILD_DIR)/asm/main/ctors.o\
