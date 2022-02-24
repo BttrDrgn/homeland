@@ -123,17 +123,29 @@ ALL_RELS += alone.rel
 ALL_REL_MAPS += alone.map
 ALL_REL_ELFS += alone.plf
 
-# # client.rel sources
-# SOURCES := \
-# 	 asm/client/client.s \
+# client.rel sources
+SOURCES := \
+	 asm/client/client.s \
 
-# O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
-# ALL_O_FILES += $(O_FILES)
-# client.plf: $(O_FILES)
-# client.rel: ELF2REL_ARGS := -i 3 -o 0x74 -l 0x3C -c 18
-# ALL_RELS += client.rel
-# ALL_REL_MAPS += client.map
-# ALL_REL_ELFS += client.plf
+O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+ALL_O_FILES += $(O_FILES)
+client.plf: $(O_FILES)
+client.rel: ELF2REL_ARGS := -i 3 -o 0x74 -l 0x3C -c 18
+ALL_RELS += client.rel
+ALL_REL_MAPS += client.map
+ALL_REL_ELFS += client.plf
+
+# server.rel sources
+SOURCES := \
+	 asm/server/server.s \
+
+O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+ALL_O_FILES += $(O_FILES)
+server.plf: $(O_FILES)
+server.rel: ELF2REL_ARGS := -i 4 -o 0xB0 -l 0x3C -c 18
+ALL_RELS += server.rel
+ALL_REL_MAPS += server.map
+ALL_REL_ELFS += server.plf
 
 #-------------------------------------------------------------------------------
 # Recipes
