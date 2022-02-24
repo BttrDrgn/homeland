@@ -5,7 +5,7 @@ SOURCES :=\
 	$(BUILD_DIR)/asm/main/sbss.o\
 	$(BUILD_DIR)/src/main/Dolphin/__start.o\
 	$(BUILD_DIR)/asm/main/Dolphin/__ppc_eabi_init.o\
-    $(BUILD_DIR)/asm/main/__mem.o\
+    $(BUILD_DIR)/asm/main/Dolphin/__mem.o\
     $(BUILD_DIR)/asm/main/Dolphin/mem_TRK.o\
     $(BUILD_DIR)/asm/main/Dolphin/__exception.o\
     $(BUILD_DIR)/asm/main/Dolphin/dolphin_trk.o\
