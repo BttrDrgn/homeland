@@ -156,8 +156,8 @@ def read_relocation_info(module, o):
             if module == 0:  # dol
                 symAddr = addend
                 if symAddr not in labels:
-                    print('error: symbol for 0x%08X not found' % symAddr)
-                    missingSymbols = True
+                    print('# error: symbol for 0x%08X not found' % symAddr)
+                    # missingSymbols = True
             else:  # rel
                 symAddr = sectionInfo[section]['offset'] + addend
                 labels[symAddr] = 'lbl_%08X' % symAddr
