@@ -78,34 +78,23 @@ endif
 # Files
 #-------------------------------------------------------------------------------
 
-BUILD_DIR := build
+NAME := homeland
+VERSION ?= final
+
+BUILD_DIR := build/$(NAME).$(VERSION)
 DOL     := $(BUILD_DIR)/main.dol
 ELF     := $(DOL:.dol=.elf)
 MAP     := $(BUILD_DIR)/main.map
-
-ALL_DIRS += $(BUILD_DIR)
 
 DOL_LCF := lcf/static.lcf
 
 # TODO: REL support
 REL_LCF := lcf/partial.lcf
 
-# main dol sources
-SOURCES := \
-    asm/main/init.s \
-    asm/main/text.s \
-    asm/main/extabindex.s \
-    asm/main/ctors.s \
-    asm/main/dtors.s \
-    asm/main/rodata.s \
-    asm/main/data.s \
-    asm/main/sdata.s \
-    asm/main/sbss.s \
-    asm/main/sdata2.s \
-    asm/main/sbss2.s \
-    asm/main/bss.s \
+include obj_files_main.mk
 
-O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+O_FILES :=	$(SOURCES)
+ALL_DIRS := $(sort $(dir $(O_FILES)))
 ALL_O_FILES := $(O_FILES)
 DUMMY != mkdir -p $(ALL_DIRS)
 $(ELF): $(O_FILES)
@@ -153,7 +142,7 @@ $(ELF): $(O_FILES)
 .PHONY: all default
 
 all: $(DOL) $(ALL_RELS)
-	$(QUIET) $(SHA1SUM) -c homeland.sha1
+	$(QUIET) $(SHA1SUM) -c sha1/$(NAME).$(VERSION).sha1
 
 # static module (.dol file)
 %.dol: %.elf $(ELF2DOL)
@@ -186,14 +175,14 @@ endef
 # relocatable modules must not use the small data sections
 %.plf: CFLAGS += -sdata 0 -sdata2 0 -g
 
-%.o: %.c
+$(BUILD_DIR)/%.o: %.c
 	$(COMPILE)
-%.o: %.cpp
+$(BUILD_DIR)/%.o: %.cpp
 	$(COMPILE)
-%.o: %.cp
+$(BUILD_DIR)/%.o: %.cp
 	$(COMPILE)
 
-%.o: %.s
+$(BUILD_DIR)/%.o: %.s
 	@echo Assembling $<
 	$(QUIET) $(AS) $(ASFLAGS) -o $@ $<
 
