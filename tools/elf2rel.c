@@ -693,9 +693,21 @@ static void write_rel_file(struct Module *module, struct RelHeader *relHdr, cons
     // 2. Write relocation data
 
     // In version 3 RELs, this is AFTER the import table, so skip over the import table for now
-    relHdr->importTableOffset = filePos;
-    filePos += 8 * importsCount;
-    relHdr->relocationTableOffset = filePos;
+    switch(relHdr->moduleId)
+    {
+        case 1:
+            relHdr->importTableOffset = filePos - 0x4;
+            filePos += 8 * importsCount;
+            relHdr->relocationTableOffset = filePos - 0x4;
+            break;
+
+        default:
+            relHdr->importTableOffset = filePos;
+            filePos += 8 * importsCount;
+            relHdr->relocationTableOffset = filePos;
+            break;
+    }
+
     // sort imports by module id
     qsort(imports, importsCount, sizeof(struct RelImportEntry), compare_imports);
     for (i = 0, imp = &imports[0]; i < importsCount; i++, imp++)
