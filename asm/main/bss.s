@@ -851,8 +851,8 @@ Type_1:
 .global Origin
 Origin:
 	.skip 0x40
-.global lbl_80487C08
-lbl_80487C08:
+.global __CARDBlock
+__CARDBlock:
 	.skip 0x220
 .global lbl_80487E28
 lbl_80487E28:

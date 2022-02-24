@@ -129901,8 +129901,8 @@ lbl_80175100:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-.global lbl_80175260
-lbl_80175260:
+.global SectorSizeTable
+SectorSizeTable:
 	.4byte 0x00002000
 	.4byte 0x00004000
 	.4byte 0x00008000
@@ -129911,8 +129911,8 @@ lbl_80175260:
 	.4byte 0x00040000
 	.4byte 0x00000000
 	.4byte 0x00000000
-.global lbl_80175280
-lbl_80175280:
+.global LatencyTable
+LatencyTable:
 	.4byte 0x00000004
 	.4byte 0x00000008
 	.4byte 0x00000010

@@ -1670,8 +1670,8 @@ lbl_804D69F8:
 	.4byte 0x00000001
 	.4byte 0
 
-.global lbl_804D6A00
-lbl_804D6A00:
+.global __CARDVendorID
+__CARDVendorID:
 	.2byte 0xFFFF
 
 .global lbl_804D6A02
