@@ -129327,113 +129327,40 @@ ResetFunctionInfo_OSMEMORY:
 	.4byte 0x00000000
 .global lbl_801746A8
 lbl_801746A8:
-	.4byte 0x4F535265
-	.4byte 0x73657453
-	.4byte 0x79737465
-	.4byte 0x6D28293A
-	.4byte 0x20596F75
-	.4byte 0x2063616E
-	.4byte 0x27742073
-	.4byte 0x70656369
-	.4byte 0x66792054
-	.4byte 0x52554520
-	.4byte 0x746F2066
-	.4byte 0x6F726365
-	.4byte 0x4D656E75
-	.4byte 0x20696620
-	.4byte 0x796F7520
-	.4byte 0x72657374
-	.4byte 0x6172742E
-	.4byte 0x2049676E
-	.4byte 0x6F726564
-	.4byte 0x0A000000
-	.4byte 0x3C3C2044
-	.4byte 0x6F6C7068
-	.4byte 0x696E2053
-	.4byte 0x444B202D
-	.4byte 0x20455849
-	.4byte 0x0972656C
-	.4byte 0x65617365
-	.4byte 0x20627569
-	.4byte 0x6C643A20
-	.4byte 0x41707220
-	.4byte 0x20352032
-	.4byte 0x30303420
-	.4byte 0x30343A31
-	.4byte 0x343A3134
-	.4byte 0x20283078
-	.4byte 0x32333031
-	.4byte 0x29203E3E
-	.4byte 0x00000000
-	.4byte 0x4D656D6F
-	.4byte 0x72792043
-	.4byte 0x61726420
-	.4byte 0x35390000
-	.4byte 0x4D656D6F
-	.4byte 0x72792043
-	.4byte 0x61726420
-	.4byte 0x31323300
-	.4byte 0x4D656D6F
-	.4byte 0x72792043
-	.4byte 0x61726420
-	.4byte 0x32353100
-	.4byte 0x4D656D6F
-	.4byte 0x72792043
-	.4byte 0x61726420
-	.4byte 0x35303700
-	.4byte 0x4D656D6F
-	.4byte 0x72792043
-	.4byte 0x61726420
-	.4byte 0x31303139
-	.4byte 0x00000000
-	.4byte 0x4D656D6F
-	.4byte 0x72792043
-	.4byte 0x61726420
-	.4byte 0x32303433
-	.4byte 0x00000000
-	.4byte 0x55534220
-	.4byte 0x41646170
-	.4byte 0x74657200
-	.4byte 0x4E657420
-	.4byte 0x43617264
-	.4byte 0x00000000
-	.4byte 0x41727469
-	.4byte 0x73742045
-	.4byte 0x74686572
-	.4byte 0x00000000
-	.4byte 0x42726F61
-	.4byte 0x6462616E
-	.4byte 0x64204164
-	.4byte 0x61707465
-	.4byte 0x72000000
-	.4byte 0x53747265
-	.4byte 0x616D2048
-	.4byte 0x616E6765
-	.4byte 0x72000000
-	.4byte 0x49532D44
-	.4byte 0x4F4C2D56
-	.4byte 0x49455745
-	.4byte 0x52000000
-	.4byte 0x00000000
+	.asciz "OSResetSystem(): You can't specify TRUE to forceMenu if you restart. Ignored\n"
+.balign 4
+	.asciz "<< Dolphin SDK - EXI\trelease build: Apr  5 2004 04:14:14 (0x2301) >>"
+.balign 4
+	.asciz "Memory Card 59"
+.balign 4
+	.asciz "Memory Card 123"
+.balign 4
+	.asciz "Memory Card 251"
+.balign 4
+	.asciz "Memory Card 507"
+.balign 4
+	.asciz "Memory Card 1019"
+.balign 4
+	.asciz "Memory Card 2043"
+.balign 4
+	.asciz "USB Adapter"
+.balign 4
+	.asciz "Net Card"
+.balign 4
+	.asciz "Artist Ether"
+.balign 4
+	.asciz "Broadband Adapter"
+.balign 4
+	.asciz "Stream Hanger"
+.balign 4
+	.asciz "IS-DOL-VIEWER"
+
+# file split
+.balign 8
 .global lbl_80174808
 lbl_80174808:
-	.4byte 0x3C3C2044
-	.4byte 0x6F6C7068
-	.4byte 0x696E2053
-	.4byte 0x444B202D
-	.4byte 0x20534909
-	.4byte 0x72656C65
-	.4byte 0x61736520
-	.4byte 0x6275696C
-	.4byte 0x643A2041
-	.4byte 0x70722020
-	.4byte 0x35203230
-	.4byte 0x30342030
-	.4byte 0x343A3134
-	.4byte 0x3A313620
-	.4byte 0x28307832
-	.4byte 0x33303129
-	.4byte 0x203E3E00
+	.asciz "<< Dolphin SDK - SI\trelease build: Apr  5 2004 04:14:16 (0x2301) >>"
+.balign 4
 .global lbl_8017484C
 lbl_8017484C:
 	.4byte 0xFFFFFFFF
@@ -129447,50 +129374,31 @@ lbl_80174860:
 	.4byte 0x00000008
 	.4byte 0x00000008
 	.4byte 0x00000008
-	.4byte 0x4E6F2072
-	.4byte 0x6573706F
-	.4byte 0x6E736500
-	.4byte 0x4E363420
-	.4byte 0x636F6E74
-	.4byte 0x726F6C6C
-	.4byte 0x65720000
-	.4byte 0x4E363420
-	.4byte 0x6D696372
-	.4byte 0x6F70686F
-	.4byte 0x6E650000
-	.4byte 0x4E363420
-	.4byte 0x6B657962
-	.4byte 0x6F617264
-	.4byte 0x00000000
-	.4byte 0x4E363420
-	.4byte 0x6D6F7573
-	.4byte 0x65000000
-	.4byte 0x47616D65
-	.4byte 0x426F7920
-	.4byte 0x41647661
-	.4byte 0x6E636500
-	.4byte 0x5374616E
-	.4byte 0x64617264
-	.4byte 0x20636F6E
-	.4byte 0x74726F6C
-	.4byte 0x6C657200
-	.4byte 0x57697265
-	.4byte 0x6C657373
-	.4byte 0x20726563
-	.4byte 0x65697665
-	.4byte 0x72000000
-	.4byte 0x57617665
-	.4byte 0x42697264
-	.4byte 0x20636F6E
-	.4byte 0x74726F6C
-	.4byte 0x6C657200
-	.4byte 0x4B657962
-	.4byte 0x6F617264
-	.4byte 0x00000000
-	.4byte 0x53746565
-	.4byte 0x72696E67
-	.4byte 0x00000000
-	.4byte 0x00000000
+.balign 4
+	.asciz "No response"
+.balign 4
+	.asciz "N64 controller"
+.balign 4
+	.asciz "N64 microphone"
+.balign 4
+	.asciz "N64 keyboard"
+.balign 4
+	.asciz "N64 mouse"
+.balign 4
+	.asciz "GameBoy Advance"
+.balign 4
+	.asciz "Standard controller"
+.balign 4
+	.asciz "Wireless receiver"
+.balign 4
+	.asciz "WaveBird controller"
+.balign 4
+	.asciz "Keyboard"
+.balign 4
+	.asciz "Steering"
+
+# file split
+.balign 8
 .global lbl_80174920
 lbl_80174920:
 	.4byte 0x00F60200
@@ -129517,47 +129425,18 @@ lbl_80174920:
 	.4byte 0x00680300
 	.4byte 0x00680300
 	.4byte 0x009C0200
-	.4byte 0x53495365
-	.4byte 0x7453616D
-	.4byte 0x706C696E
-	.4byte 0x67526174
-	.4byte 0x653A2075
-	.4byte 0x6E6B6E6F
-	.4byte 0x776E2054
-	.4byte 0x5620666F
-	.4byte 0x726D6174
-	.4byte 0x2E205573
-	.4byte 0x65206465
-	.4byte 0x6661756C
-	.4byte 0x742E0000
-	.4byte 0x00000000
+	.asciz "SISetSamplingRate: unknown TV format. Use default."
+
+# file split
+.balign 8
 .global lbl_801749B8
 lbl_801749B8:
-	.4byte 0x44424578
-	.4byte 0x63657074
-	.4byte 0x696F6E44
-	.4byte 0x65737469
-	.4byte 0x6E617469
-	.4byte 0x6F6E0A00
+	.asciz "DBExceptionDestination\n"
+.balign 4
 .global lbl_801749D0
 lbl_801749D0:
-	.4byte 0x3C3C2044
-	.4byte 0x6F6C7068
-	.4byte 0x696E2053
-	.4byte 0x444B202D
-	.4byte 0x20564909
-	.4byte 0x72656C65
-	.4byte 0x61736520
-	.4byte 0x6275696C
-	.4byte 0x643A2041
-	.4byte 0x70722020
-	.4byte 0x37203230
-	.4byte 0x30342030
-	.4byte 0x343A3133
-	.4byte 0x3A353920
-	.4byte 0x28307832
-	.4byte 0x33303129
-	.4byte 0x203E3E00
+	.asciz "<< Dolphin SDK - VI\trelease build: Apr  7 2004 04:13:59 (0x2301) >>"
+.balign 4
 	.4byte 0x060000F0
 	.4byte 0x00180019
 	.4byte 0x00030002
@@ -129699,91 +129578,23 @@ lbl_80174BC4:
 	.4byte lbl_8005800C
 	.4byte lbl_8005800C
 	.4byte lbl_8005800C
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A2A
-	.4byte 0x2A2A2A0A
-	.4byte 0x00000000
-	.4byte 0x20212021
-	.4byte 0x20212043
-	.4byte 0x20412055
-	.4byte 0x20542049
-	.4byte 0x204F204E
-	.4byte 0x20212021
-	.4byte 0x20212020
-	.4byte 0x20202020
-	.4byte 0x20202020
-	.4byte 0x2020200A
-	.4byte 0x00000000
-	.4byte 0x54686973
-	.4byte 0x20545620
-	.4byte 0x666F726D
-	.4byte 0x61742022
-	.4byte 0x44454255
-	.4byte 0x475F5041
-	.4byte 0x4C222069
-	.4byte 0x73206F6E
-	.4byte 0x6C792066
-	.4byte 0x6F72200A
-	.4byte 0x00000000
-	.4byte 0x74656D70
-	.4byte 0x6F726172
-	.4byte 0x7920736F
-	.4byte 0x6C757469
-	.4byte 0x6F6E2075
-	.4byte 0x6E74696C
-	.4byte 0x2050414C
-	.4byte 0x20444143
-	.4byte 0x20626F61
-	.4byte 0x7264200A
-	.4byte 0x00000000
-	.4byte 0x69732061
-	.4byte 0x7661696C
-	.4byte 0x61626C65
-	.4byte 0x2E20506C
-	.4byte 0x65617365
-	.4byte 0x20646F20
-	.4byte 0x4E4F5420
-	.4byte 0x75736520
-	.4byte 0x74686973
-	.4byte 0x2020200A
-	.4byte 0x00000000
-	.4byte 0x6D6F6465
-	.4byte 0x20696E20
-	.4byte 0x7265616C
-	.4byte 0x2067616D
-	.4byte 0x65732121
-	.4byte 0x21202020
-	.4byte 0x20202020
-	.4byte 0x20202020
-	.4byte 0x20202020
-	.4byte 0x2020200A
-	.4byte 0x00000000
-	.4byte 0x5649436F
-	.4byte 0x6E666967
-	.4byte 0x75726528
-	.4byte 0x293A2054
-	.4byte 0x72696564
-	.4byte 0x20746F20
-	.4byte 0x6368616E
-	.4byte 0x6765206D
-	.4byte 0x6F646520
-	.4byte 0x66726F6D
-	.4byte 0x20282564
-	.4byte 0x2920746F
-	.4byte 0x20282564
-	.4byte 0x292C2077
-	.4byte 0x68696368
-	.4byte 0x20697320
-	.4byte 0x666F7262
-	.4byte 0x69646465
-	.4byte 0x6E0A0000
+.balign 4
+.global lbl_80174C40
+lbl_80174C40:
+	.asciz "***************************************\n"
+.balign 4
+	.asciz " ! ! ! C A U T I O N ! ! !             \n"
+.balign 4
+	.asciz "This TV format \"DEBUG_PAL\" is only for \n"
+.balign 4
+	.asciz "temporary solution until PAL DAC board \n"
+.balign 4
+	.asciz "is available. Please do NOT use this   \n"
+.balign 4
+	.asciz "mode in real games!!!                  \n"
+.balign 4
+	.asciz "VIConfigure(): Tried to change mode from (%d) to (%d), which is forbidden\n"
+.balign 4
 .global lbl_80174D94
 lbl_80174D94:
 	.4byte lbl_800597C8
@@ -129794,25 +129605,12 @@ lbl_80174D94:
 	.4byte lbl_800597D8
 	.4byte lbl_800597C8
 	.4byte lbl_800597C8
-	.4byte 0x00000000
-	.4byte 0x3C3C2044
-	.4byte 0x6F6C7068
-	.4byte 0x696E2053
-	.4byte 0x444B202D
-	.4byte 0x20504144
-	.4byte 0x0972656C
-	.4byte 0x65617365
-	.4byte 0x20627569
-	.4byte 0x6C643A20
-	.4byte 0x41707220
-	.4byte 0x20352032
-	.4byte 0x30303420
-	.4byte 0x30343A31
-	.4byte 0x343A3439
-	.4byte 0x20283078
-	.4byte 0x32333031
-	.4byte 0x29203E3E
-	.4byte 0x00000000
+# file split
+.balign 8
+.global lbl_80174DB8
+lbl_80174DB8:
+	.asciz "<< Dolphin SDK - PAD\trelease build: Apr  5 2004 04:14:49 (0x2301) >>"
+.balign 4
 .global ResetFunctionInfo
 ResetFunctionInfo:
 	.4byte OnReset3
@@ -137291,8 +137089,8 @@ __lower_map:
 	.4byte 0xF4F5F6F7
 	.4byte 0xF8F9FAFB
 	.4byte 0xFCFDFEFF
-.global lbl_8017BFE8
-lbl_8017BFE8:
+.global __upper_map
+__upper_map:
 	.4byte 0x00010203
 	.4byte 0x04050607
 	.4byte 0x08090A0B
