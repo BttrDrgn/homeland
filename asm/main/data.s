@@ -137495,8 +137495,8 @@ TRK_ISR_OFFSETS:
 	.4byte 0x00001400
 	.4byte 0x00001700
 	.4byte 0x00000000
-.global lbl_8017C5C0
-lbl_8017C5C0:
+.global gDBCommTable
+gDBCommTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

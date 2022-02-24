@@ -1238,8 +1238,8 @@ lbl_804D4038:
 .global lbl_804D4040
 lbl_804D4040:
 	.skip 0x4
-.global lbl_804D4044
-lbl_804D4044:
+.global gTRKState
+gTRKState:
 	.skip 0xA4
 .global gTRKCPUState
 gTRKCPUState:

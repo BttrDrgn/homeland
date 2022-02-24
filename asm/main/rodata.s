@@ -20847,8 +20847,8 @@ lbl_800F6590:
 	.4byte 0x4D61696E
 	.4byte 0x200A0000
 	.4byte 0x00000000
-.global lbl_800F65A0
-lbl_800F65A0:
+.global EndofProgramInstruction$162
+EndofProgramInstruction$162:
 	.4byte 0x00454E44
 .global lbl_800F65A4
 lbl_800F65A4:
