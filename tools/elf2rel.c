@@ -695,17 +695,35 @@ static void write_rel_file(struct Module *module, struct RelHeader *relHdr, cons
     // In version 3 RELs, this is AFTER the import table, so skip over the import table for now
     switch(relHdr->moduleId)
     {
+        //Start
         case 1:
             relHdr->importTableOffset = filePos - 0x4;
             filePos += 8 * importsCount;
             relHdr->relocationTableOffset = filePos - 0x4;
             break;
 
-        default:
+        //Alone
+        case 2:
             relHdr->importTableOffset = filePos;
             filePos += 8 * importsCount;
             relHdr->relocationTableOffset = filePos;
             break;
+
+        //Client
+        case 3:
+            relHdr->importTableOffset = filePos + 0x1;
+            filePos += 8 * importsCount;
+            relHdr->relocationTableOffset = filePos + 0x1;
+            break;
+
+        //Server
+        case 4:
+            relHdr->importTableOffset = filePos - 0xB;
+            filePos += 8 * importsCount;
+            relHdr->relocationTableOffset = filePos - 0xB;
+            break;
+
+        
     }
 
     // sort imports by module id
