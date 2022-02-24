@@ -13904,8 +13904,6 @@ lbl_800E52D4:
 	.4byte 0x1522A7C8
 	.4byte 0x1523778C
 	.4byte 0x15238EC0
-.global lbl_800F0004
-lbl_800F0004:
 	.4byte 0x1523AE78
 	.4byte 0x1523AE7C
 	.4byte 0x1523AF8C
@@ -19201,6 +19199,8 @@ lbl_800F4E50:
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000004
+.global lbl_800F4E60
+lbl_800F4E60:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -20197,6 +20197,8 @@ lbl_800F5C50:
 	.4byte 0x004E414E
 	.4byte 0x006E616E
 	.4byte 0x00000000
+.global lbl_800F5C78
+lbl_800F5C78:
 	.4byte 0x00000000
 	.4byte 0x7FFFFFFF
 	.4byte 0x00000000
@@ -20809,6 +20811,8 @@ lbl_800F6508:
 	.4byte 0x60000000
 	.4byte 0x60000000
 	.4byte 0x60000000
+.global lbl_800F6530
+lbl_800F6530:
 	.4byte 0x60000000
 	.4byte 0x60000000
 	.4byte 0x60000000
