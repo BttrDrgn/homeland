@@ -206,9 +206,12 @@ $(BUILD_DIR)/%.o: %.s
 
 clean:
 	$(RM) $(DOL) $(ELF) $(MAP) $(ALL_RELS) $(ALL_REL_MAPS) $(ALL_REL_ELFS) $(ELF2DOL) $(ELF2REL)
+	rm -f -d -r build
 	find . -name '*.o' -exec rm {} +
 	find . -name '*.dep' -exec rm {} +
 	find . -name '*.dump' -exec rm {} +
+	find . -name 'ctx.c' -exec rm {} +
+	find ./include -name "*.s" -type f -delete
 
 # Automatic dependency files
 DEP_FILES := $(addsuffix .dep,$(basename $(ALL_O_FILES)))
