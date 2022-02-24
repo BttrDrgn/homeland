@@ -81,17 +81,16 @@ endif
 NAME := homeland
 VERSION ?= final
 
+LINK_INFO_DIR := linker
 BUILD_DIR := build/$(NAME).$(VERSION)
 DOL     := $(BUILD_DIR)/main.dol
 ELF     := $(DOL:.dol=.elf)
 MAP     := $(BUILD_DIR)/main.map
 
-DOL_LCF := lcf/static.lcf
+DOL_LCF := $(LINK_INFO_DIR)/static.lcf
+REL_LCF := $(LINK_INFO_DIR)/partial.lcf
 
-# TODO: REL support
-REL_LCF := lcf/partial.lcf
-
-include obj_files_main.mk
+include $(LINK_INFO_DIR)/obj_files_main.mk
 
 O_FILES :=	$(SOURCES)
 ALL_DIRS := $(sort $(dir $(O_FILES)))
@@ -99,29 +98,30 @@ ALL_O_FILES := $(O_FILES)
 DUMMY != mkdir -p $(ALL_DIRS)
 $(ELF): $(O_FILES)
 
-# # start.rel sources
-# SOURCES := \
-# 	 asm/start/start.s \
+# start.rel sources
+# include $(LINK_INFO_DIR)/obj_files_main.mk
+SOURCES := \
+	 asm/start/start.s \
 
-# O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
-# ALL_O_FILES += $(O_FILES)
-# start.plf: $(O_FILES)
-# start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3A -c 16
-# ALL_RELS += start.rel
-# ALL_REL_MAPS += start.map
-# ALL_REL_ELFS += start.plf
+O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+ALL_O_FILES += $(O_FILES)
+start.plf: $(O_FILES)
+start.rel: ELF2REL_ARGS := -i 1 -o 0x0 -l 0x3A -c 16
+ALL_RELS += start.rel
+ALL_REL_MAPS += start.map
+ALL_REL_ELFS += start.plf
 
 # # alone.rel sources
-# SOURCES := \
-# 	 asm/alone/alone.s \
+SOURCES := \
+	 asm/alone/alone.s \
 
-# O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
-# ALL_O_FILES += $(O_FILES)
-# alone.plf: $(O_FILES)
-# alone.rel: ELF2REL_ARGS := -i 2 -o 0x3A -l 0x3A -c 16
-# ALL_RELS += alone.rel
-# ALL_REL_MAPS += alone.map
-# ALL_REL_ELFS += alone.plf
+O_FILES := $(addsuffix .o,$(basename $(SOURCES)))
+ALL_O_FILES += $(O_FILES)
+alone.plf: $(O_FILES)
+alone.rel: ELF2REL_ARGS := -i 2 -o 0x3A -l 0x3A -c 16
+ALL_RELS += alone.rel
+ALL_REL_MAPS += alone.map
+ALL_REL_ELFS += alone.plf
 
 # # client.rel sources
 # SOURCES := \
