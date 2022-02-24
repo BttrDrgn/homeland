@@ -4628,8 +4628,8 @@ lbl_804D8784:
 .global lbl_804D8788
 lbl_804D8788:
 	.skip 0x8
-.global lbl_804D8790
-lbl_804D8790:
+.global __OSArenaHi
+__OSArenaHi:
 	.skip 0x8
 .global lbl_804D8798
 lbl_804D8798:
@@ -4646,17 +4646,17 @@ lbl_804D87A4:
 .global lbl_804D87A8
 lbl_804D87A8:
 	.skip 0x8
-.global lbl_804D87B0
-lbl_804D87B0:
+.global InterruptHandlerTable
+InterruptHandlerTable:
 	.skip 0x4
-.global lbl_804D87B4
-lbl_804D87B4:
+.global __OSLastInterruptSrr0
+__OSLastInterruptSrr0:
 	.skip 0x4
-.global lbl_804D87B8
-lbl_804D87B8:
+.global __OSLastInterrupt
+__OSLastInterrupt:
 	.skip 0x8
-.global lbl_804D87C0
-lbl_804D87C0:
+.global __OSLastInterruptTime
+__OSLastInterruptTime:
 	.skip 0x4
 .global lbl_804D87C4
 lbl_804D87C4:
@@ -4728,8 +4728,8 @@ lbl_804D8830:
 .global lbl_804D8834
 lbl_804D8834:
 	.skip 0x4
-.global lbl_804D8838
-lbl_804D8838:
+.global __PADFixBits
+__PADFixBits:
 	.skip 0x8
 .global lbl_804D8840
 lbl_804D8840:
@@ -4809,38 +4809,38 @@ lbl_804D88AC:
 .global lbl_804D88B0
 lbl_804D88B0:
 	.skip 0x8
-.global lbl_804D88B8
-lbl_804D88B8:
+.global Initialized
+Initialized:
 	.skip 0x4
-.global lbl_804D88BC
-lbl_804D88BC:
+.global EnabledBits
+EnabledBits:
 	.skip 0x4
-.global lbl_804D88C0
-lbl_804D88C0:
+.global ResettingBits
+ResettingBits:
 	.skip 0x4
-.global lbl_804D88C4
-lbl_804D88C4:
+.global RecalibrateBits
+RecalibrateBits:
 	.skip 0x4
-.global lbl_804D88C8
-lbl_804D88C8:
+.global WaitingBits
+WaitingBits:
 	.skip 0x4
-.global lbl_804D88CC
-lbl_804D88CC:
+.global CheckingBits
+CheckingBits:
 	.skip 0x4
-.global lbl_804D88D0
-lbl_804D88D0:
+.global PendingBits
+PendingBits:
 	.skip 0x4
-.global lbl_804D88D4
-lbl_804D88D4:
+.global BarrelBits
+BarrelBits:
 	.skip 0x4
-.global lbl_804D88D8
-lbl_804D88D8:
+.global SamplingCallback
+SamplingCallback:
 	.skip 0x4
-.global lbl_804D88DC
-lbl_804D88DC:
+.global recalibrated$388
+recalibrated$388:
 	.skip 0x4
-.global lbl_804D88E0
-lbl_804D88E0:
+.global __PADSpec
+__PADSpec:
 	.skip 0x8
 .global lbl_804D88E8
 lbl_804D88E8:
@@ -6057,8 +6057,8 @@ lbl_804D8FA0:
 .global lbl_804D8FA4
 lbl_804D8FA4:
 	.skip 0x4
-.global lbl_804D8FA8
-lbl_804D8FA8:
+.global __global_destructor_chain
+__global_destructor_chain:
 	.skip 0x8
 .global __aborting
 __aborting:

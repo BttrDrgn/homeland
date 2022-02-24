@@ -809,8 +809,8 @@ lbl_80486CA0:
 .global lbl_80486CF0
 lbl_80486CF0:
 	.skip 0x20
-.global lbl_80486D10
-lbl_80486D10:
+.global __OSErrorTable
+__OSErrorTable:
 	.skip 0x50
 .global lbl_80486D60
 lbl_80486D60:
@@ -845,11 +845,11 @@ lbl_80487A70:
 .global lbl_80487B60
 lbl_80487B60:
 	.skip 0x58
-.global lbl_80487BB8
-lbl_80487BB8:
+.global Type_1
+Type_1:
 	.skip 0x10
-.global lbl_80487BC8
-lbl_80487BC8:
+.global Origin
+Origin:
 	.skip 0x40
 .global lbl_80487C08
 lbl_80487C08:

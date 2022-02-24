@@ -128061,8 +128061,8 @@ lbl_80173340:
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
 	.4byte 0x00000000
-.global lbl_80173350
-lbl_80173350:
+.global DSPInitCode
+DSPInitCode:
 	.4byte 0x029F0010
 	.4byte 0x029F0033
 	.4byte 0x029F0034
@@ -129281,8 +129281,8 @@ lbl_80173C88:
 	.4byte 0x031A031B
 	.4byte 0x00000000
 	.4byte 0x00000000
-.global lbl_80174618
-lbl_80174618:
+.global InterruptPrioTable
+InterruptPrioTable:
 	.4byte 0x00000100
 	.4byte 0x00000040
 	.4byte 0xF8000000
@@ -129319,9 +129319,9 @@ lbl_80174670:
 	.4byte 0x20747970
 	.4byte 0x65202533
 	.4byte 0x640A0000
-.global lbl_80174698
-lbl_80174698:
-	.4byte lbl_80050804
+.global ResetFunctionInfo_OSMEMORY
+ResetFunctionInfo_OSMEMORY:
+	.4byte OnReset_OSMEMORY
 	.4byte 0x0000007F
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -129813,9 +129813,9 @@ lbl_80174D94:
 	.4byte 0x32333031
 	.4byte 0x29203E3E
 	.4byte 0x00000000
-.global lbl_80174E00
-lbl_80174E00:
-	.4byte lbl_8005B1D0
+.global ResetFunctionInfo
+ResetFunctionInfo:
+	.4byte OnReset3
 	.4byte 0x0000007F
 	.4byte 0x00000000
 	.4byte 0x00000000

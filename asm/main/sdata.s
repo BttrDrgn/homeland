@@ -1530,14 +1530,14 @@ lbl_804D695C:
 	# ROM: 0x17AC3C
 	.4byte 0x25730A00
 
-.global lbl_804D6960
-lbl_804D6960:
+.global __OSArenaLo
+__OSArenaLo:
 	# ROM: 0x17AC40
 	.4byte 0xFFFFFFFF
 	.4byte 0
 
-.global lbl_804D6968
-lbl_804D6968:
+.global __OSFpscrEnableBits
+__OSFpscrEnableBits:
 	# ROM: 0x17AC48
 	.4byte 0x000000F8
 
@@ -1594,43 +1594,43 @@ lbl_804D69A4:
 	.balign 4
 	.4byte 0
 
-.global lbl_804D69B0
-lbl_804D69B0:
+.global __PADVersion
+__PADVersion:
 	# ROM: 0x17AC90
 	.4byte 0x80174DB8  ;# ptr
 
-.global lbl_804D69B4
-lbl_804D69B4:
+.global ResettingChan
+ResettingChan:
 	# ROM: 0x17AC94
 	.4byte 0x00000020
 
-.global lbl_804D69B8
-lbl_804D69B8:
+.global XPatchBits
+XPatchBits:
 	# ROM: 0x17AC98
 	.4byte 0xF0000000
 
-.global lbl_804D69BC
-lbl_804D69BC:
+.global AnalogMode
+AnalogMode:
 	# ROM: 0x17AC9C
 	.4byte 0x00000300
 
-.global lbl_804D69C0
-lbl_804D69C0:
+.global Spec
+Spec:
 	# ROM: 0x17ACA0
 	.4byte 0x00000005
 
-.global lbl_804D69C4
-lbl_804D69C4:
+.global MakeStatus
+MakeStatus:
 	# ROM: 0x17ACA4
 	.4byte 0x8005AD60  ;# ptr
 
-.global lbl_804D69C8
-lbl_804D69C8:
+.global CmdReadOrigin
+CmdReadOrigin:
 	# ROM: 0x17ACA8
 	.4byte 0x41000000
 
-.global lbl_804D69CC
-lbl_804D69CC:
+.global CmdCalibrate
+CmdCalibrate:
 	# ROM: 0x17ACAC
 	.4byte 0x42000000
 
