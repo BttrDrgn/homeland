@@ -1241,8 +1241,8 @@ lbl_804D4040:
 .global lbl_804D4044
 lbl_804D4044:
 	.skip 0xA4
-.global lbl_804D40E8
-lbl_804D40E8:
+.global gTRKCPUState
+gTRKCPUState:
 	.skip 0x430
 .global lbl_804D4518
 lbl_804D4518:
@@ -1250,8 +1250,8 @@ lbl_804D4518:
 .global lbl_804D45AC
 lbl_804D45AC:
 	.skip 0x14
-.global lbl_804D45C0
-lbl_804D45C0:
+.global lc_base
+lc_base:
 	.skip 0x8
 .global lbl_804D45C8
 lbl_804D45C8:

@@ -185,4 +185,3 @@ __init_cpp_exceptions_reference:
 	.4byte lbl_8004AA74
 	.4byte lbl_8004AD18
 	.4byte lbl_8004B000
-	.4byte 0x00000000

@@ -9,8 +9,8 @@ else
 endif
 
 # Unknown what actual compiler version it uses
-COMPILER_VERSION ?= 2.6
-LINKER_VERSION ?= 2.6
+MWCC_VERSION = 2.6
+MWLD_VERSION := 2.6
 
 VERBOSE ?= 0
 
@@ -26,11 +26,9 @@ default: all
 # Tools
 #-------------------------------------------------------------------------------
 
-COMPILER_DIR := tools/mwcc_compiler/$(COMPILER_VERSION)
-LINKER_DIR := tools/mwcc_compiler/$(LINKER_VERSION)
 AS      := $(DEVKITPPC)/bin/powerpc-eabi-as
-CC      := $(WINE) $(COMPILER_DIR)/mwcceppc.exe
-LD      := $(WINE) $(LINKER_DIR)/mwldeppc.exe
+CC      = $(WINE) tools/mwcc_compiler/$(MWCC_VERSION)/mwcceppc.exe
+LD      := $(WINE) tools/mwcc_compiler/$(MWLD_VERSION)/mwldeppc.exe
 OBJCOPY := $(DEVKITPPC)/bin/powerpc-eabi-objcopy
 OBJDUMP := $(DEVKITPPC)/bin/powerpc-eabi-objdump
 GCC     := $(DEVKITPPC)/bin/powerpc-eabi-gcc
@@ -39,13 +37,18 @@ SHA1SUM := sha1sum
 ELF2DOL := tools/elf2dol$(EXE)
 ELF2REL := tools/elf2rel$(EXE)
 
+# Options
 INCLUDE_DIRS := src
 SYSTEM_INCLUDE_DIRS := include
 
+INCLUDES := -i include/
+ASM_INCLUDES := -I include/
+
 RUNTIME_INCLUDE_DIRS := libraries/PowerPC_EABI_Support/Runtime/Inc
 
-ASFLAGS     := -mgekko -I asm
-CFLAGS      := -O4,p -inline auto -nodefaults -proc gekko -fp hard -Cpp_exceptions off -enum int -warn pragmas -pragma 'cats off'
+#ASFLAGS     := -mgekko -I asm
+ASFLAGS     := -mgekko $(ASM_INCLUDES)
+CFLAGS      := -O4,p -inline auto -nodefaults -proc gekko -fp hard -Cpp_exceptions off -enum int -warn pragmas -pragma 'cats off' $(INCLUDES)
 CPPFLAGS     = $(addprefix -i ,$(INCLUDE_DIRS) $(dir $^)) -I- $(addprefix -i ,$(SYSTEM_INCLUDE_DIRS))
 ifeq ($(VERBOSE),1)
 # this set of LDFLAGS outputs warnings.
@@ -147,6 +150,8 @@ ALL_RELS += server.rel
 ALL_REL_MAPS += server.map
 ALL_REL_ELFS += server.plf
 
+$(BUILD_DIR)/src/main/Dolphin/__start.o: MWCC_VERSION := 1.2.5
+
 #-------------------------------------------------------------------------------
 # Recipes
 #-------------------------------------------------------------------------------
@@ -188,7 +193,8 @@ endef
 %.plf: CFLAGS += -sdata 0 -sdata2 0 -g
 
 $(BUILD_DIR)/%.o: %.c
-	$(COMPILE)
+	@echo "Compiling " $<
+	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $<
 $(BUILD_DIR)/%.o: %.cpp
 	$(COMPILE)
 $(BUILD_DIR)/%.o: %.cp

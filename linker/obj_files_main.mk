@@ -2,6 +2,8 @@
 
 # main dol sources
 SOURCES :=\
+	$(BUILD_DIR)/asm/main/sbss.o\
+	$(BUILD_DIR)/src/main/Dolphin/__start.o\
     $(BUILD_DIR)/asm/main/init.o\
     $(BUILD_DIR)/asm/main/text.o\
     $(BUILD_DIR)/asm/main/extabindex.o\
@@ -10,7 +12,7 @@ SOURCES :=\
     $(BUILD_DIR)/asm/main/rodata.o\
     $(BUILD_DIR)/asm/main/data.o\
     $(BUILD_DIR)/asm/main/sdata.o\
-    $(BUILD_DIR)/asm/main/sbss.o\
+    $(BUILD_DIR)/asm/main/sbss_1.o\
     $(BUILD_DIR)/asm/main/sdata2.o\
     $(BUILD_DIR)/asm/main/sbss2.o\
     $(BUILD_DIR)/asm/main/bss.o\
