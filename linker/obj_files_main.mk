@@ -3,6 +3,7 @@
 # main dol sources
 SOURCES :=\
 	$(BUILD_DIR)/asm/main/sbss.o\
+	$(BUILD_DIR)/asm/main/sdata2.o\
 	$(BUILD_DIR)/src/main/Dolphin/__start.o\
 	$(BUILD_DIR)/asm/main/Dolphin/__ppc_eabi_init.o\
     $(BUILD_DIR)/asm/main/Dolphin/__mem.o\
@@ -16,6 +17,8 @@ SOURCES :=\
     $(BUILD_DIR)/asm/main/text_1.o\
     $(BUILD_DIR)/asm/main/Dolphin/file_io.o\
     $(BUILD_DIR)/asm/main/Dolphin/FILE_POS.o\
+    $(BUILD_DIR)/asm/main/Dolphin/mbstring.o\
+    $(BUILD_DIR)/asm/main/Dolphin/mem.o\
     $(BUILD_DIR)/asm/main/text_2.o\
     $(BUILD_DIR)/asm/main/extabindex.o\
     $(BUILD_DIR)/asm/main/ctors.o\
@@ -23,6 +26,6 @@ SOURCES :=\
     $(BUILD_DIR)/asm/main/rodata.o\
     $(BUILD_DIR)/asm/main/sdata.o\
     $(BUILD_DIR)/asm/main/sbss_1.o\
-    $(BUILD_DIR)/asm/main/sdata2.o\
+    $(BUILD_DIR)/asm/main/sdata2_1.o\
     $(BUILD_DIR)/asm/main/sbss2.o\
     $(BUILD_DIR)/asm/main/bss.o\
