@@ -1216,7 +1216,16 @@ lbl_804D21F0:
 	.skip 0x100
 .global lbl_804D22F0
 lbl_804D22F0:
-	.skip 0x338
+	.skip 0x38
+.global stderr_buff
+stderr_buff:
+	.skip 0x100
+.global stdout_buff
+stdout_buff:
+	.skip 0x100
+.global stdin_buff
+stdin_buff:
+	.skip 0x100
 .global lbl_804D2628
 lbl_804D2628:
 	.skip 0x18
