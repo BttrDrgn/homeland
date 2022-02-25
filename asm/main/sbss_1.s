@@ -1,19 +1,19 @@
 .section .sbss, "wa"  # 0x804D6D00 - 0x804D9020
 .balign 8
-.global lbl_804D8818
-lbl_804D8818:
+.global IDSerialPort1
+IDSerialPort1:
 	.skip 0x8
-.global lbl_804D8820
-lbl_804D8820:
+.global Chan
+Chan:
 	.skip 0x4
-.global lbl_804D8824
-lbl_804D8824:
+.global Dev
+Dev:
 	.skip 0x4
-.global lbl_804D8828
-lbl_804D8828:
+.global Enabled
+Enabled:
 	.skip 0x4
-.global lbl_804D882C
-lbl_804D882C:
+.global BarnacleEnabled
+BarnacleEnabled:
 	.skip 0x4
 .global lbl_804D8830
 lbl_804D8830:
@@ -1371,8 +1371,8 @@ lbl_804D8FC0:
 .global lbl_804D8FC8
 lbl_804D8FC8:
 	.skip 0x8
-.global lbl_804D8FD0
-lbl_804D8FD0:
+.global initialized$60
+initialized$60:
 	.skip 0x8
 .global lbl_804D8FD8
 lbl_804D8FD8:

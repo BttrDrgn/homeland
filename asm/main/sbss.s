@@ -4616,8 +4616,8 @@ lbl_804D8770:
 .global lbl_804D8774
 lbl_804D8774:
 	.skip 0x4
-.global lbl_804D8778
-lbl_804D8778:
+.global __OSInIPL
+__OSInIPL:
 	.skip 0x8
 .global lbl_804D8780
 lbl_804D8780:
@@ -4625,8 +4625,8 @@ lbl_804D8780:
 .global lbl_804D8784
 lbl_804D8784:
 	.skip 0x4
-.global lbl_804D8788
-lbl_804D8788:
+.global AlarmQueue
+AlarmQueue:
 	.skip 0x8
 .global __OSArenaHi
 __OSArenaHi:

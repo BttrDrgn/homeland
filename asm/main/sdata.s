@@ -1564,8 +1564,8 @@ lbl_804D6980:
 	.4byte 0x800522EC  ;# ptr
 	.4byte 0
 
-.global lbl_804D6988
-lbl_804D6988:
+.global __EXIVersion
+__EXIVersion:
 	# ROM: 0x17AC68
 	.4byte 0x801746F8  ;# ptr
 	.4byte 0

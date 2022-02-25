@@ -128055,9 +128055,9 @@ lbl_80173148:
 	.4byte 0x616C697A
 	.4byte 0x65642E2E
 	.4byte 0x2E0A0000
-.global lbl_80173340
-lbl_80173340:
-	.4byte lbl_8004C3E4
+.global ResetFunctionInfo_OSAlarm
+ResetFunctionInfo_OSAlarm:
+	.4byte OnReset_OSAlarm
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -136799,7 +136799,7 @@ __files:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte lbl_800E19B8
-	.4byte lbl_800D80D0
+	.4byte __write_console
 	.4byte lbl_800D80C8
 	.4byte 0x00000000
 	.4byte 0x8017BB90
@@ -136819,7 +136819,7 @@ __files:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte lbl_800E19B8
-	.4byte lbl_800D80D0
+	.4byte __write_console
 	.4byte lbl_800D80C8
 	.4byte 0x00000000
 	.4byte 0x8017BBE0
@@ -136839,7 +136839,7 @@ __files:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte lbl_800E19B8
-	.4byte lbl_800D80D0
+	.4byte __write_console
 	.4byte lbl_800D80C8
 	.4byte 0x00000000
 	.4byte 0x8017BC30

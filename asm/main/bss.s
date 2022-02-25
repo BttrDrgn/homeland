@@ -818,8 +818,8 @@ lbl_80486D60:
 .global lbl_80486DB8
 lbl_80486DB8:
 	.skip 0x9F8
-.global lbl_804877B0
-lbl_804877B0:
+.global Ecb
+Ecb:
 	.skip 0xC0
 .global lbl_80487870
 lbl_80487870:
