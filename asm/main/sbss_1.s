@@ -1352,7 +1352,8 @@ lbl_804D8FA4:
 	.skip 0x4
 .global __global_destructor_chain
 __global_destructor_chain:
-	.skip 0x8
+	.skip 0x4
+.balign 8
 .global __aborting
 __aborting:
 	.skip 0x4
@@ -1365,15 +1366,18 @@ __stdio_exit:
 .global __console_exit
 __console_exit:
 	.skip 0x4
-.global lbl_804D8FC0
-lbl_804D8FC0:
-	.skip 0x8
-.global lbl_804D8FC8
-lbl_804D8FC8:
-	.skip 0x8
+.global init$193
+init$193:
+	.skip 0x1
+.balign 8
+.global errno
+errno:
+	.skip 0x4
+.balign 8
 .global initialized$60
 initialized$60:
-	.skip 0x8
+	.skip 0x4
+.balign 8
 .global lbl_804D8FD8
 lbl_804D8FD8:
 	.skip 0x8

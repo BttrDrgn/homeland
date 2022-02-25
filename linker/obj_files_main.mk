@@ -15,6 +15,7 @@ SOURCES :=\
 	$(BUILD_DIR)/asm/main/data_1.o\
     $(BUILD_DIR)/asm/main/text_1.o\
     $(BUILD_DIR)/asm/main/Dolphin/file_io.o\
+    $(BUILD_DIR)/asm/main/Dolphin/FILE_POS.o\
     $(BUILD_DIR)/asm/main/text_2.o\
     $(BUILD_DIR)/asm/main/extabindex.o\
     $(BUILD_DIR)/asm/main/ctors.o\
