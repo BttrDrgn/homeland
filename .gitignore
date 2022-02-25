@@ -25,3 +25,8 @@ errors.txt
 output.asm
 .vscode/
 *.idb
+*.id0
+*.id1
+*.nam
+*.id2
+*.til
