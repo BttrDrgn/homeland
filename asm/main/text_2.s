@@ -2,13 +2,6 @@
 
 .section .text, "ax"  # 0x800056A0 - 0x800E2460
 
-.global func_800D3114
-func_800D3114:
-/* 800D3114 000D0074  3C 60 80 0D */	lis r3, __close_all@ha
-/* 800D3118 000D0078  38 03 E7 DC */	addi r0, r3, __close_all@l
-/* 800D311C 000D007C  90 0D BC 98 */	stw r0, __stdio_exit@sda21(r13)
-/* 800D3120 000D0080  4E 80 00 20 */	blr 
-
 .global func_800D3124
 func_800D3124:
 /* 800D3124 000D0084  94 21 FF 60 */	stwu r1, -0xa0(r1)
