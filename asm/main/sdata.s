@@ -2166,8 +2166,8 @@ fragmentID:
 	.4byte 0xFFFFFFFE
 	.4byte 0
 
-.global lbl_804D6CA0
-lbl_804D6CA0:
+.global "@wstringBase0"
+"@wstringBase0":
 	# ROM: 0x17AF80
 	.4byte 0
 	.4byte 0

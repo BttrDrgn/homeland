@@ -20185,8 +20185,8 @@ lbl_800F5B68:
 	.4byte 0x00000000
 	.4byte 0x2E000043
 	.4byte 0x00000000
-.global lbl_800F5C50
-lbl_800F5C50:
+.global "@stringBase0"
+"@stringBase0":
 	.4byte 0x002D494E
 	.4byte 0x46002D69
 	.4byte 0x6E660049
