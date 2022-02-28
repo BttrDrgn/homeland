@@ -4210,39 +4210,3 @@ lbl_804DA150:
 lbl_804DA154:
 	# ROM: 0x17C114
 	.4byte 0x45800000
-
-.global lbl_804DA158
-lbl_804DA158:
-	# ROM: 0x17C118
-	.4byte 0
-	.4byte 0
-
-.global lbl_804DA160
-lbl_804DA160:
-	# ROM: 0x17C120
-	.4byte 0x3FF00000
-	.4byte 0
-
-.global lbl_804DA168
-lbl_804DA168:
-	# ROM: 0x17C128
-	.4byte 0xBFF00000
-	.4byte 0
-
-.global lbl_804DA170
-lbl_804DA170:
-	# ROM: 0x17C130
-	.4byte 0x40140000
-	.4byte 0
-
-.global lbl_804DA178
-lbl_804DA178:
-	# ROM: 0x17C138
-	.4byte 0x43300000
-	.4byte 0
-
-.global lbl_804DA180
-lbl_804DA180:
-	# ROM: 0x17C140
-	.4byte 0x43300000
-	.4byte 0x80000000

@@ -10,13 +10,18 @@ SOURCES :=\
     $(BUILD_DIR)/asm/main/Dolphin/mem_TRK.o\
     $(BUILD_DIR)/asm/main/Dolphin/__exception.o\
     $(BUILD_DIR)/asm/main/Dolphin/dolphin_trk.o\
+	$(BUILD_DIR)/asm/main/rodata.o\
     $(BUILD_DIR)/asm/main/text.o\
     $(BUILD_DIR)/asm/main/data.o\
 	$(BUILD_DIR)/src/main/Dolphin/ansi_files.o\
+	$(BUILD_DIR)/asm/main/Dolphin/ansi_fp.o\
 	$(BUILD_DIR)/asm/main/data_1.o\
     $(BUILD_DIR)/asm/main/text_1.o\
     $(BUILD_DIR)/asm/main/Dolphin/file_io.o\
     $(BUILD_DIR)/asm/main/Dolphin/FILE_POS.o\
+    $(BUILD_DIR)/asm/main/Dolphin/locale.o\
+	$(BUILD_DIR)/asm/main/rodata_1.o\
+	$(BUILD_DIR)/asm/main/data_2.o\
     $(BUILD_DIR)/asm/main/Dolphin/mbstring.o\
     $(BUILD_DIR)/src/main/Dolphin/mem.o\
     $(BUILD_DIR)/asm/main/Dolphin/mem_funcs.o\
@@ -25,7 +30,6 @@ SOURCES :=\
     $(BUILD_DIR)/asm/main/extabindex.o\
     $(BUILD_DIR)/asm/main/ctors.o\
     $(BUILD_DIR)/asm/main/dtors.o\
-    $(BUILD_DIR)/asm/main/rodata.o\
     $(BUILD_DIR)/asm/main/sdata.o\
     $(BUILD_DIR)/asm/main/sbss_1.o\
     $(BUILD_DIR)/asm/main/sdata2_1.o\
