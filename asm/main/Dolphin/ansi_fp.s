@@ -1,6 +1,7 @@
 .include "macros.inc"
 
 .section .rodata # 0x800E2780 - 0x800F6880
+.balign 8
 "@stringBase0":
 	.4byte 0x31373937
 	.4byte 0x36393331
