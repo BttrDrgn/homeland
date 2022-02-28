@@ -1265,11 +1265,11 @@ lc_base:
 .global lbl_804D45C8
 lbl_804D45C8:
 	.skip 0x8
-.global lbl_804D45D0
-lbl_804D45D0:
+.global TRK_Use_BBA
+TRK_Use_BBA:
 	.skip 0x8
-.global lbl_804D45D8
-lbl_804D45D8:
+.global bUseSerialIO
+bUseSerialIO:
 	.skip 0x8
 .global lbl_804D45E0
 lbl_804D45E0:
@@ -1277,9 +1277,9 @@ lbl_804D45E0:
 .global lbl_804D4DE0
 lbl_804D4DE0:
 	.skip 0x20
-.global lbl_804D4E00
-lbl_804D4E00:
+.global gRecvBuf_1
+gRecvBuf_1:
 	.skip 0x500
-.global lbl_804D5300
-lbl_804D5300:
+.global gRecvCB_1
+gRecvCB_1:
 	.skip 0x1C
