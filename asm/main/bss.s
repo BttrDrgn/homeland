@@ -1274,8 +1274,8 @@ bUseSerialIO:
 .global lbl_804D45E0
 lbl_804D45E0:
 	.skip 0x800
-.global lbl_804D4DE0
-lbl_804D4DE0:
+.global gRecvCB
+gRecvCB:
 	.skip 0x20
 .global gRecvBuf_1
 gRecvBuf_1:

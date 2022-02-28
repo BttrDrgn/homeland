@@ -413,52 +413,29 @@ lbl_800F6098:
 	.4byte 0x00000000
 .global lbl_800F6228
 lbl_800F6228:
-	.4byte 0x44697370
-	.4byte 0x61746368
-	.4byte 0x20636F6D
-	.4byte 0x6D616E64
-	.4byte 0x20307825
-	.4byte 0x3038780A
-	.4byte 0x00000000
+	.asciz "Dispatch command 0x%08x\n"
+.balign 4
 .global lbl_800F6244
 lbl_800F6244:
-	.4byte 0x44697370
-	.4byte 0x61746368
-	.4byte 0x20636F6D
-	.4byte 0x706C6574
-	.4byte 0x65206572
-	.4byte 0x72203D20
-	.4byte 0x256C640A
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.asciz "Dispatch complete err = %ld\n"
+.balign 8
 .global lbl_800F6268
 lbl_800F6268:
-	.4byte 0x0A4D6574
-	.4byte 0x726F5452
-	.4byte 0x4B204F70
-	.4byte 0x74696F6E
-	.4byte 0x203A2053
-	.4byte 0x65726961
-	.4byte 0x6C494F20
-	.4byte 0x2D200000
-	.4byte 0x456E6162
-	.4byte 0x6C650A00
-	.4byte 0x44697361
-	.4byte 0x626C650A
-	.4byte 0x00000000
+	.asciz "\nMetroTRK Option : SerialIO - "
+.balign 4
+lbl_800F6288:
+	.asciz "Enable\n"
+.balign 4
+lbl_800F6290:
+	.asciz "Disable\n"
+.balign 4
 .global lbl_800F629C
 lbl_800F629C:
-	.4byte 0x446F436F
-	.4byte 0x6E74696E
-	.4byte 0x75650A00
-	.4byte 0x446F466C
-	.4byte 0x75736843
-	.4byte 0x61636865
-	.4byte 0x20756E69
-	.4byte 0x6D706C65
-	.4byte 0x6D656E74
-	.4byte 0x65642121
-	.4byte 0x210A0000
+	.asciz "DoContinue\n"
+.balign 4
+lbl_800F62A8:
+	.asciz "DoFlushCache unimplemented!!!\n"
+.balign 4
 .global lbl_800F62C8
 lbl_800F62C8:
 	.4byte 0x53656E64
@@ -732,136 +709,55 @@ lbl_800F65A4:
 	.4byte 0x56204861
 	.4byte 0x72647761
 	.4byte 0x72650A00
-	.4byte 0x00000000
+.balign 8
 .global lbl_800F66A8
 lbl_800F66A8:
-	.4byte 0x6363206E
-	.4byte 0x6F742069
-	.4byte 0x6E697469
-	.4byte 0x616C697A
-	.4byte 0x65640A00
-	.4byte 0x63635F77
-	.4byte 0x72697465
-	.4byte 0x203A204F
-	.4byte 0x75747075
-	.4byte 0x74206461
-	.4byte 0x74612030
-	.4byte 0x78253038
-	.4byte 0x7820256C
-	.4byte 0x64206279
-	.4byte 0x7465730A
-	.4byte 0x00000000
-	.4byte 0x63635F77
-	.4byte 0x72697465
-	.4byte 0x2073656E
-	.4byte 0x64696E67
-	.4byte 0x20256C64
-	.4byte 0x20627974
-	.4byte 0x65730A00
+	.asciz "cc not initialized\n"
+.balign 4
+lbl_800F66BC:
+	.asciz "cc_write : Output data 0x%08x %ld bytes\n"
+.balign 4
+lbl_800F66E8:
+	.asciz "cc_write sending %ld bytes\n"
+.balign 4
 .global lbl_800F6704
 lbl_800F6704:
-	.4byte 0x45787065
-	.4byte 0x63746564
-	.4byte 0x20706163
-	.4byte 0x6B657420
-	.4byte 0x73697A65
-	.4byte 0x203A2030
-	.4byte 0x78253038
-	.4byte 0x78202825
-	.4byte 0x6C64290A
-	.4byte 0x00000000
+	.asciz "Expected packet size : 0x%08x (%ld)\n"
+.balign 4
 .global lbl_800F672C
 lbl_800F672C:
-	.4byte 0x63635F72
-	.4byte 0x65616420
-	.4byte 0x3A206572
-	.4byte 0x726F7220
-	.4byte 0x72656164
-	.4byte 0x696E6720
-	.4byte 0x62797465
-	.4byte 0x73206672
-	.4byte 0x6F6D2045
-	.4byte 0x58493220
-	.4byte 0x256C640A
-	.4byte 0x00000000
+	.asciz "cc_read : error reading bytes from EXI2 %ld\n"
+.balign 4
 .global lbl_800F675C
 lbl_800F675C:
-	.4byte 0x43414C4C
-	.4byte 0x494E4720
-	.4byte 0x45584932
-	.4byte 0x5F496E69
-	.4byte 0x740A0000
+	.asciz "CALLING EXI2_Init\n"
+.balign 4
 .global lbl_800F6770
 lbl_800F6770:
-	.4byte 0x444F4E45
-	.4byte 0x2043414C
-	.4byte 0x4C494E47
-	.4byte 0x20455849
-	.4byte 0x325F496E
-	.4byte 0x69740A00
+	.asciz "DONE CALLING EXI2_Init\n"
+.balign 4
 .global lbl_800F6788
 lbl_800F6788:
-	.4byte 0x6363206E
-	.4byte 0x6F742069
-	.4byte 0x6E697469
-	.4byte 0x616C697A
-	.4byte 0x65640A00
-	.4byte 0x63635F77
-	.4byte 0x72697465
-	.4byte 0x203A204F
-	.4byte 0x75747075
-	.4byte 0x74206461
-	.4byte 0x74612030
-	.4byte 0x78253038
-	.4byte 0x7820256C
-	.4byte 0x64206279
-	.4byte 0x7465730A
-	.4byte 0x00000000
-	.4byte 0x63635F77
-	.4byte 0x72697465
-	.4byte 0x2073656E
-	.4byte 0x64696E67
-	.4byte 0x20256C64
-	.4byte 0x20627974
-	.4byte 0x65730A00
+	.asciz "cc not initialized\n"
+.balign 4
+lbl_800F679C:
+	.asciz "cc_write : Output data 0x%08x %ld bytes\n"
+.balign 4
+lbl_800F67C8:
+	.asciz "cc_write sending %ld bytes\n"
+.balign 4
 .global lbl_800F67E4
 lbl_800F67E4:
-	.4byte 0x45787065
-	.4byte 0x63746564
-	.4byte 0x20706163
-	.4byte 0x6B657420
-	.4byte 0x73697A65
-	.4byte 0x203A2030
-	.4byte 0x78253038
-	.4byte 0x78202825
-	.4byte 0x6C64290A
-	.4byte 0x00000000
+	.asciz "Expected packet size : 0x%08x (%ld)\n"
+.balign 4
 .global lbl_800F680C
 lbl_800F680C:
-	.4byte 0x63635F72
-	.4byte 0x65616420
-	.4byte 0x3A206572
-	.4byte 0x726F7220
-	.4byte 0x72656164
-	.4byte 0x696E6720
-	.4byte 0x62797465
-	.4byte 0x73206672
-	.4byte 0x6F6D2045
-	.4byte 0x58493220
-	.4byte 0x256C640A
-	.4byte 0x00000000
+	.asciz "cc_read : error reading bytes from EXI2 %ld\n"
+.balign 4
 .global lbl_800F683C
 lbl_800F683C:
-	.4byte 0x43414C4C
-	.4byte 0x494E4720
-	.4byte 0x45584932
-	.4byte 0x5F496E69
-	.4byte 0x740A0000
+	.asciz "CALLING EXI2_Init\n"
+.balign 4
 .global lbl_800F6850
 lbl_800F6850:
-	.4byte 0x444F4E45
-	.4byte 0x2043414C
-	.4byte 0x4C494E47
-	.4byte 0x20455849
-	.4byte 0x325F496E
-	.4byte 0x69740A00
+	.asciz "DONE CALLING EXI2_Init\n"

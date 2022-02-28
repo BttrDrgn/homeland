@@ -1405,8 +1405,8 @@ lbl_804D8FFC:
 .global lbl_804D9000
 lbl_804D9000:
 	.skip 0x8
-.global lbl_804D9008
-lbl_804D9008:
+.global gIsInitialized
+gIsInitialized:
 	.skip 0x8
 .global gIsInitialized_1
 gIsInitialized_1:
