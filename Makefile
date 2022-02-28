@@ -34,6 +34,7 @@ OBJDUMP := $(DEVKITPPC)/bin/powerpc-eabi-objdump
 GCC     := $(DEVKITPPC)/bin/powerpc-eabi-gcc
 HOSTCC  := cc
 SHA1SUM := sha1sum
+PYTHON  := python3
 ELF2DOL := tools/elf2dol$(EXE)
 ELF2REL := tools/elf2rel$(EXE)
 
@@ -160,6 +161,7 @@ $(BUILD_DIR)/src/main/Dolphin/__start.o: MWCC_VERSION := 1.2.5
 
 all: $(DOL) $(ALL_RELS)
 	$(QUIET) $(SHA1SUM) -c sha1/$(NAME).$(VERSION).sha1
+	$(QUIET) $(PYTHON) tools/calcprogress.py $@
 
 # static module (.dol file)
 %.dol: %.elf $(ELF2DOL)
