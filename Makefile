@@ -196,9 +196,11 @@ $(BUILD_DIR)/%.o: %.c
 	@echo "Compiling " $<
 	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $<
 $(BUILD_DIR)/%.o: %.cpp
-	$(COMPILE)
+	@echo "Compiling " $<
+	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $<
 $(BUILD_DIR)/%.o: %.cp
-	$(COMPILE)
+	@echo "Compiling " $<
+	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $<
 
 $(BUILD_DIR)/%.o: %.s
 	@echo Assembling $<

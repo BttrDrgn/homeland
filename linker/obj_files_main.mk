@@ -30,6 +30,8 @@ SOURCES :=\
 	$(BUILD_DIR)/asm/main/Dolphin/mem_funcs.o\
 	$(BUILD_DIR)/src/main/Dolphin/misc_io.o\
 	$(BUILD_DIR)/asm/main/text_2.o\
+	$(BUILD_DIR)/src/main/Dolphin/MWTrace.o\
+	$(BUILD_DIR)/src/main/Dolphin/MWCriticalSection_gc.o\
 	$(BUILD_DIR)/asm/main/extabindex.o\
 	$(BUILD_DIR)/asm/main/ctors.o\
 	$(BUILD_DIR)/asm/main/dtors.o\
